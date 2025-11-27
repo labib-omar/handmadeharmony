@@ -15,10 +15,10 @@ const Navbar = () => {
 
             </div>
             <ul className="nav-menu">
-                <li onClick={()=>{setmenu("HOME")}}><Link style={{textDecoration:'none'}} to='/'>Home</Link>  {menu ==="home"?<hr />:<></>}</li>
-                <li onClick={()=>{setmenu("SHOP")}}><Link style={{textDecoration:'none'}} to='/shop'>Shop</Link> {menu ==="shop"?<hr />:<></>}</li>
-                <li onClick={()=>{setmenu("CONTACT")}}><Link style={{textDecoration:'none'}} to='/contact'>Contact</Link>  {menu ==="contact"?<hr />:<></>}</li>
-                <li onClick={()=>{setmenu("ABOUT")}}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link>  {menu ==="about us"?<hr />:<></>}</li>
+                <li onClick={()=>{setmenu("home")}}><Link style={{textDecoration:'none'}} to='/'>Home</Link>  {menu ==="home"?<hr />:<></>}</li>
+                <li onClick={()=>{setmenu("shop")}}><Link style={{textDecoration:'none'}} to='/shop'>Shop</Link> {menu ==="shop"?<hr />:<></>}</li>
+                <li onClick={()=>{setmenu("contact")}}><Link style={{textDecoration:'none'}} to='/contact'>Contact</Link>  {menu ==="contact"?<hr />:<></>}</li>
+                <li onClick={()=>{setmenu("about")}}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link>  {menu ==="about us"?<hr />:<></>}</li>
             </ul> 
             <div className="nav-login-cart">
                 <Link  to='/login'><button>Login</button></Link>
