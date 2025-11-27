@@ -4,12 +4,6 @@
     padding: 16px;
     box-shadow: 0  1px 3px -2px #bc2e2f;
 }
-/* .nav-logo{
-    display: flex;
-    align-items: center ;
-    gap: 10px;
- 
-} */
 
 .nav-logo {
     display: flex;
@@ -28,6 +22,8 @@
     font-size: 38px;
     font-weight: 600 ;
 }
+
+
 .nav-menu{
     display: flex; 
     align-items: center;
@@ -37,16 +33,16 @@
     font-size: 20px ;
     font-weight: 400 ;
 }
-.nav-menu li{
 
+.nav-menu li{
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 3px;
 }
-.nav-menu hr{
 
+.nav-menu hr{
     border: none;
     width: 80%;
     height: 3px;
