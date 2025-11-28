@@ -1,4 +1,6 @@
-const port = 4000;
+require("dotenv").config();
+
+const port = process.env.PORT;
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -10,10 +12,11 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-//hokhsh
-//intergeeks25
+
 //Database connection with MongoDB
-mongoose.connect("mongodb+srv://hokhsh:intergeeks25@cluster0.wszqv8b.mongodb.net/handmadeharmony")
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.error("DB Error:", err));
 
 // API Creation
 
