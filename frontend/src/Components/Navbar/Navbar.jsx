@@ -1,34 +1,48 @@
 import React, { useState } from 'react'
 import "./Navbar.css";
-import logo from '../Assets/Logo-H-H-handmade-harmony-1.png'
+import logo from '../Assets/Project Pic/Logo/Logo-H-H-handmade-harmony-1.png'
 import  cart_icon from '../Assets/cart-icon.png'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const [menu,setmenu]=useState("shop");
-  return (
-    
-        <div className="navbar">
-            <div className="nav-logo">
-                <img src={logo} alt="logo" />
-                { <p>Handmade Harmony</p>}
+    const [menu,setmenu]=useState("home");
+  return (<>
+        <div className="head-logo-container">
 
+            <div className='head-socialmedia'>socialmedia</div>
+
+            <div className="logo">
+                <img src={logo} alt="logo" />
+                {/* { <p>Handmade Harmony</p> } */}
             </div>
-            <ul className="nav-menu">
-                <li onClick={()=>{setmenu("home")}}><Link style={{textDecoration:'none'}} to='/'>Home</Link>  {menu ==="home"?<hr />:<></>}</li>
-                <li onClick={()=>{setmenu("shop")}}><Link style={{textDecoration:'none'}} to='/shop'>Shop</Link> {menu ==="shop"?<hr />:<></>}</li>
-                <li onClick={()=>{setmenu("contact")}}><Link style={{textDecoration:'none'}} to='/contact'>Contact</Link>  {menu ==="contact"?<hr />:<></>}</li>
-                <li onClick={()=>{setmenu("about")}}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link>  {menu ==="about us"?<hr />:<></>}</li>
-            </ul> 
-            <div className="nav-login-cart">
+
+            <div className="head-login">
                 <Link  to='/login'><button>Login</button></Link>
-                <Link to='/cart'><img src={cart_icon} alt='cart icon' /></Link>
-                <div className="NAV" />
-            <div className="nav-cart-coun">0</div>
-                 
             </div>
+
         </div>
-      
+        
+
+        <div className="navbar">
+
+            <div className='nav-search'></div>
+       
+            <ul className="nav-menu">
+                <li onClick={()=>{setmenu("home"   )}}><Link to='/'>HOME</Link>           {menu ==="home"?<hr/>:<></>}   </li>
+                <li onClick={()=>{setmenu("shop"   )}}><Link to='/shop'>SHOP</Link>       {menu ==="shop"?<hr/>:<></>}   </li>
+                <li onClick={()=>{setmenu("contact")}}><Link to='/contact'>CONTACTS</Link>{menu ==="contact"?<hr/>:<></>}</li>
+                <li onClick={()=>{setmenu("about"  )}}><Link to='/about'>ABOUT</Link>     {menu ==="about"?<hr/>:<></>}  </li>
+            </ul> 
+
+
+            <div className="nav-cart">
+                <Link to='/cart'><img src={cart_icon} alt='cart icon' /></Link>
+                
+                <div className="nav-cart-count">0</div>
+            </div>
+
+        </div>
+      </>
     
   )
 }

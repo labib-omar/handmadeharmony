@@ -1,37 +1,85 @@
-.navbar{
-    display:flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0  1px 3px -2px #bc2e2f;
-}
 
-.nav-logo {
+
+.head-logo-container{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
+    background-color: #f2f2f2;
 }
 
-.nav-logo img {
-    width: 150px; 
-    height: auto;
+.head-socialmedia{
+    font-size: 20px;
+    font-weight: 600 ;
+    color: #bc2e2f ;
+    margin-left: 26px ;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.nav-logo p{
+.logo img {
+    width: auto; 
+    height: 190px;
+}
+
+/* .logo p{
     color:#bc2e2f;
     font-size: 38px;
     font-weight: 600 ;
+} */
+
+.head-login button{
+    width: 100px;
+    height: 40px;
+    outline: none ;
+    border: 1px solid #bc2e2f ;
+    border-radius: 8px;  
+    color: #bc2e2f ;
+    font-size: 20px;
+    font-weight: 600 ;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-right: 26px ;
 }
 
+ .head-login button:active{
+    background: #bc2e2f;
+    color: #f2f2f2;
+ }
+
+ 
+.navbar{
+    position: relative;
+    display:flex;
+    align-items: center;
+    padding: 10px 54px;
+    box-shadow: 0px 0px 40px -16px #bc2e2f;
+background-color: rgba(242, 242, 242, 0.45);
+}
+.nav-search{
+    font-size: 20px;
+    font-weight: 600;
+    color: #bc2e2f;
+    margin-right: auto;  
+}
 
 .nav-menu{
-    display: flex; 
+    position: absolute;              
+    left: 50%;                      
+    transform: translateX(-50%);    
+    display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
     color: #bc2e2f;
-    font-size: 20px ;
+    font-size: 22px ;
     font-weight: 400 ;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu li{
@@ -39,51 +87,50 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 0px;
+    color: #1c1c1c;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;  
 }
 
 .nav-menu hr{
     border: none;
-    width: 80%;
+    width: 100%;
     height: 3px;
     border-radius: 10px;
     background-color: #bc2e2f ;
 }
-.nav-login-cart{
+
+.nav-cart{
+    margin-left: auto;             
+    position: relative;             
     display: flex;
     align-items: center;
-    gap: 45px ;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
- .nav-login-cart button{
-    width: 157px;
-    height: 58px;
-    outline: none ;
-    border: 1px solid #bc2e2f ;
-    border-radius: 75px;
-    color: cornflowerblue;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: white;
-    cursor: pointer;
 
- }
+.nav-cart img {
+    width: auto; 
+    height: 65px;
+}
 
- .nav-login-cart button:active{
-    
-    background: #F3F;
- }
 
- .nav-cart-coun{
-
-    width: 22px;
-    height: 22px;
+.nav-cart-count{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-top: -40px;
+    margin-left: 66px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: -60px;
-    margin-left: -100px ;
-    border-radius: 11px;
-    font-size: 14px;
-    background: red;
-    color: white;
- }
+    border-radius: 50%;
+    font-size: 18px;
+    background: #bc2e2f;
+    color: #f2f2f2;
+}

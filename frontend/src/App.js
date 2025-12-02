@@ -13,25 +13,25 @@ import Cart from "./Pages/Cart";
 
 function App() {
   return (
-    
     <div>
       <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About />} />
+
         <Route path='/product' element={<Product />} >
-        <Route path=':productId' element={<Product />}/>
-          
+          <Route path=':productId' element={<Product />}/>
         </Route>
+
         <Route path='/cart' element={<Cart />}/>
         <Route path='/login' element={<LoginSignup />}/>
 
       </Routes>
      
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }
