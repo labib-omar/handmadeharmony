@@ -1,6 +1,7 @@
 import React from 'react'
 import './NewCollection.css'
 import new_collections from '../Assets/new_collections'
+import Item from '../Items/Item';
 
 
 const NewCollection = () => {
@@ -8,7 +9,7 @@ const NewCollection = () => {
     <div className='new-collections'>
         <h1>NEW COLLECTIONS</h1>
         <hr />
-            <div className="collections">
+            {/* <div className="collections">
 
 
 
@@ -20,7 +21,20 @@ const NewCollection = () => {
     </div>
   ))}
   
-          </div>
+          </div> */}
+          
+<div className="collections">
+  {new_collections.map(product => (
+    <Item
+      key={product.id}
+      id={product.id}
+      name={product.name}
+      image={product.image}
+        old_price={product.old_price}
+            new_price={product.new_price}
+    />
+  ))}
+</div>
 </div>
       
     
