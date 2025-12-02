@@ -1,71 +1,144 @@
+/* HERO WRAPPER */
 .hero {
     height: 100vh;
-    background:linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    width: 100%;
     display: flex;
-    
-}
-/* .hero-left h2,
-.hero-left p {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-} */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    box-sizing: border-box;
 
+    /* soft beige / pink gradient like the screenshot */
+    background: linear-gradient(90deg, #fff7ec 0%, #ffe7ec 45%, #ffd5e5 100%);
+}
+
+/* LEFT SIDE */
 .hero-left {
-    flex: 1;
+    flex: 1.1;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    padding-left: 150px;
-    line-height: 1.5;
 }
 
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
-    font-weight: 600;
+/* Top sentence */
+.hero-left h2 {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #a35a4c;
+    margin-bottom: 1.5rem;
+}
+
+/* H.H */
+.hero-left h1:first-of-type {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 3.4rem;
+    letter-spacing: 0.18em;
+    color: #b93538;
     margin: 0;
-    
-
 }
+
+/* Handmade Harmony */
+.hero-left h1:last-of-type {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 3.1rem;
+    color: #b93538;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Body text */
 .hero-left p {
-    color: #171717;
-    font-size: 90px;
-    font-weight: 700 ;
-     margin: 0; /* removes space */
-    line-height: 1; 
-    
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333333;
+    max-width: 520px;
 }
 
-
-
-.hero-hand-icon{
-
+/* 👋 icon row */
+.hero-hand-icon {
     display: flex;
     align-items: center;
-    gap: 15px;
+    margin-bottom: 0.5rem;
 }
-.hero-latest-btn{
 
-    display: flex;
-    justify-content: center;
+.hero-hand-icon p:last-child {
+    font-size: 1.9rem;
+    margin-left: 0.25rem;
+}
+
+/* CTA BUTTON */
+.hero-latest-btn {
+    margin-top: 2.2rem;
+    display: inline-flex;
     align-items: center;
-    gap: 20px;
-    width: 310px ;
-    height: 70x;
-    border-radius: 75px;
-    margin-top: 30px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-
+    gap: 0.75rem;
+    padding: 0.85rem 2.6rem;
+    border-radius: 999px;
+    background-color: #c7433b;
+    color: #ffffff;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
-.hero-right{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.hero-latest-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.hero-latest-btn:hover {
+    background-color: #aa3531;
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* RIGHT SIDE – IMAGE BLOCK LIKE THE SLIDER */
+.hero-right {
+    flex: 0.9;
+    height: 70%;
+    max-width: 420px;
+    border-radius: 26px;
+    background-image: url('../Assets/Project Pic/Home page/ice-cream-crochet-for-home-page.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        height: auto;
+        padding: 4rem 1.75rem 3rem;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        align-items: flex-start;
+    }
+
+    .hero-left h1:first-of-type {
+        font-size: 2.5rem;
+        letter-spacing: 0.14em;
+    }
+
+    .hero-left h1:last-of-type {
+        font-size: 2.3rem;
+    }
+
+    .hero-right {
+        width: 100%;
+        max-width: 360px;
+        height: 340px;
+        align-self: center;
+    }
 }
