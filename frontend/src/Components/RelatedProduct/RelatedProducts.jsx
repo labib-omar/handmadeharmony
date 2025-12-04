@@ -1,7 +1,8 @@
 import React from 'react'
 import './RelatedProducts.css'
-import { products } from "../Assets/data";
+// import { products } from "../Assets/data";
 import Item from '../Items/Item';
+import all_product from '../Assets/all_product';
 
 
 const RelatedProduct = () => {
@@ -10,7 +11,7 @@ const RelatedProduct = () => {
       <h1>Related Products</h1>
       <hr />
       <div className="relatedproducts-item">
-        {products.map((item,i)=>{
+        {all_product.map((item,i)=>{
 
           return <Item
     key={item.id}

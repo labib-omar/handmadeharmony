@@ -51,7 +51,6 @@ import About from './Pages/About';
 import Cart from "./Pages/Cart";
 import LoginSignup from './Pages/LoginSignup';
 
-
 function App() {
   return (
     
@@ -67,7 +66,6 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
-
       </BrowserRouter>
     </ShopContextProvider>
   );

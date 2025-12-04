@@ -5,6 +5,8 @@
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox'
 import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
+ 
+
 
   const Product = () => {
     const {all_product}=useContext(ShopContext)
