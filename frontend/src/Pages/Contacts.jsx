@@ -2,6 +2,7 @@ import React from "react";
 import './Css/Contacts.css';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
+
 // import contactimage from '../Components/Assets/Project Pic/About page/hand-making.crochet-in-bluecolor-for-about-page.jpg';
 
 
@@ -11,9 +12,9 @@ import Footer from "../Components/Footer/Footer";
 const Contacts = () => {
   return (
     <div className="contact-page">
-<Navbar />
-      
-       <div className="contact-hero">
+            <Navbar />
+
+      <div className="contact-hero">
         <h1>Contact Us</h1>
         {/* <img src={contactimage} alt="Contact Us" /> */}
       </div>
@@ -79,7 +80,7 @@ const Contacts = () => {
             </form>
    
         </div>
-<Footer />
+<Footer  />
        </div>
   );
 };
