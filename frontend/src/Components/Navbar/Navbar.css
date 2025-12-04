@@ -1,18 +1,21 @@
 
+.header{
+    width: 100%;
+}
 
-.head-logo-container{
+
+
+.header-logo-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242, 0.25);
+    height: 24vh;
 }
 
-.head-socialmedia{
-    font-size: 20px;
-    font-weight: 600 ;
-    color: #bc2e2f ;
-    margin-left: 26px ;
+.free{
+    margin-left: 8px;
+    width: 152px;
 }
 
 .logo {
@@ -23,7 +26,7 @@
 
 .logo img {
     width: auto; 
-    height: 190px;
+    height: 220px;
 }
 
 /* .logo p{
@@ -32,24 +35,32 @@
     font-weight: 600 ;
 } */
 
-.head-login button{
-    width: 100px;
+.header-login button{
+    width: 152px;
     height: 40px;
     outline: none ;
     border: 1px solid #bc2e2f ;
     border-radius: 8px;  
     color: #bc2e2f ;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600 ;
-    background-color: #ffffff;
+    background-color: rgba(242, 242, 242, 0.4);
     cursor: pointer;
     margin-right: 26px ;
+    transition: 0.3s;
 }
 
- .head-login button:active{
+.header-login button:hover {
     background: #bc2e2f;
     color: #f2f2f2;
+}
+
+ .header-login button:active{
+    background: #1c1c1c;
+    color: #f2f2f2;
  }
+
+ 
 
  
 .navbar{
@@ -58,13 +69,14 @@
     align-items: center;
     padding: 10px 54px;
     box-shadow: 0px 0px 40px -16px #bc2e2f;
-background-color: rgba(242, 242, 242, 0.45);
+    background-color: rgba(242, 242, 242, 0.5);
+    height: 30px;
 }
+
 .nav-search{
-    font-size: 20px;
-    font-weight: 600;
-    color: #bc2e2f;
-    margin-right: auto;  
+    width: 50px;
+    font-size: 26px;
+    margin-left: auto;  
 }
 
 .nav-menu{
@@ -74,10 +86,7 @@ background-color: rgba(242, 242, 242, 0.45);
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
-    color: #bc2e2f;
-    font-size: 22px ;
-    font-weight: 400 ;
+    gap: 60px;
     margin: 0;
     padding: 0;
 }
@@ -89,6 +98,13 @@ background-color: rgba(242, 242, 242, 0.45);
     justify-content: center;
     gap: 0px;
     color: #1c1c1c;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-menu li:hover {
+    color: #bc2e2f;
 }
 
 .nav-menu a {
@@ -100,7 +116,7 @@ background-color: rgba(242, 242, 242, 0.45);
     border: none;
     width: 100%;
     height: 3px;
-    border-radius: 10px;
+    border-radius: 1.1px;
     background-color: #bc2e2f ;
 }
 
@@ -116,7 +132,7 @@ background-color: rgba(242, 242, 242, 0.45);
 
 .nav-cart img {
     width: auto; 
-    height: 65px;
+    height: 60px;
 }
 
 
