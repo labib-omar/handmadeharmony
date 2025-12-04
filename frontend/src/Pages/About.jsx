@@ -7,7 +7,7 @@ import jone from '../Components/Assets/product_17.png';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer"; 
 
-const About = () => { 
+const About = () => {
   return (
     <div className="about-page">
 

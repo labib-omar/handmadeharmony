@@ -32,7 +32,7 @@
 
 //       </Routes>
 //       <Footer />
-    
+     
 //     </BrowserRouter>
 //     </div>
 //   );
@@ -51,12 +51,13 @@ import About from './Pages/About';
 import Cart from "./Pages/Cart";
 import LoginSignup from './Pages/LoginSignup';
 
+
 function App() {
   return (
     
     <ShopContextProvider>
       <BrowserRouter>
-  
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
@@ -66,6 +67,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
+
       </BrowserRouter>
     </ShopContextProvider>
   );
