@@ -1,35 +1,32 @@
-// import React from 'react'
-
-// const About = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default About
 import React from "react";
 import "./Css/About.css";
-import About_icon from '../Components/Assets/Project Pic/About page/closet-full-of-crochet-from-the-workshop-for-about-page.jpg';
-import sahra from '../Components/Assets/Project Pic/sahra.jpg';
-import hadil from '../Components/Assets/Project Pic/hadiel.jpg';
-import jhone from '../Components/Assets/Project Pic/johne.jpg';  
+import About_icon from '../Components/Assets/post-1-during-making-the-doll.png';
+import sarah from '../Components/Assets/product_9.png';
+import hadil from '../Components/Assets/product_2.png';
+import jone from '../Components/Assets/product_17.png'; 
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"; 
 
-const About = () => {
+const About = () => { 
   return (
     <div className="about-page">
 
-      {/* ---------------- HEADER TITLE ---------------- */}
+      <Navbar />
+
       <div className="about-header">
+
         <h1>About Us</h1>
-        <div className="line"></div>
+        
+        <hr className='hr'/>
+
       </div>
 
-      {/* ---------------- WHO WE ARE ---------------- */}
       <div className="about-who-we-are">
+
         <div className="about-text">
+
           <h2>Who We Are</h2>
+
           <p>
             At H.H, every stitch tells a story. Founded by Hadil, a lifelong lover 
             of colors, textures, and tiny details, we turn simple threads into dolls 
@@ -37,6 +34,7 @@ const About = () => {
             grew into a passion for creating characters that spark joy, comfort, 
             and a sense of childhood wonder.
           </p>
+
         </div>
 
         <div className="about-img">
@@ -44,17 +42,19 @@ const About = () => {
         </div>
       </div>
 
-      {/* ---------------- TEAM SECTION ---------------- */}
       <div className="about-section-title">
+
         <h3>A Few Words About</h3>
+
         <h2>Our Team</h2>
+
         <div className="line"></div>
       </div>
 
       <div className="about-team">
         <div className="team-card">
-          <img src={jhone} alt="ceo" />
-          <h4>Jhone Dimer</h4>
+          <img src={jone} alt="ceo" />
+          <h4>Jone Dimer</h4>
           <p>CEO</p>
         </div>
 
@@ -65,13 +65,13 @@ const About = () => {
         </div>
 
         <div className="team-card">
-          <img src={sahra}alt="marketing" />
+          <img src={sarah}alt="marketing" />
           <h4>Sarah Smith</h4>
           <p>Marketing Head</p>
         </div>
       </div>
 
-      {/* ---------------- VALUES ---------------- */}
+
       <div className="about-values">
         <h2>Our Values</h2>
         <div className="line"></div>
@@ -82,7 +82,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* ---------------- DREAM ---------------- */}
+
       <div className="about-dream">
         <h2>Our Dream</h2>
         <div className="line"></div>
@@ -92,7 +92,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* ---------------- COMMUNITY ---------------- */}
+
       <div className="about-community">
         <h2>Join Our Community</h2>
         <div className="line"></div>
@@ -105,29 +105,19 @@ const About = () => {
         <h4>We're honoured to create something special, just for you.</h4>
       </div>
 
-      {/* ---------------- SOCIAL ICONS ---------------- */}
-      <div className="about-social">
-        <h2>Follow Us</h2>
-        <div className="line"></div>
 
-        <div className="social-icons">
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-youtube"></i>
-          <i className="fab fa-tiktok"></i>
-        </div>
-      </div>
+     
 
       {/* ---------------- FEATURES ---------------- */}
       <div className="about-features">
         <div className="feature-box">
           <h4>Worldwide Shipping</h4>
-          <p>We deliver handmade joy to your door—wherever you are.</p>
+          <p>We deliver handmade joy to your door, wherever you are.</p>
         </div>
 
         <div className="feature-box">
           <h4>Best Quality</h4>
-          <p>Lovingly crafted with durable materials and detailed finish.</p>
+          <p>Carefully crafted using high-quality materials.</p>
         </div>
 
         <div className="feature-box">
@@ -137,9 +127,10 @@ const About = () => {
 
         <div className="feature-box">
           <h4>Secure Payments</h4>
-          <p>Checkout with peace of mind—safe, simple, encrypted.</p>
+          <p>Encrypted & simple & safe online transactions.</p>
         </div>
       </div>
+      <Footer />
 
     </div>
   );

@@ -1,15 +1,17 @@
 import React from "react";
-import './Css/Contact.css';
+import './Css/Contacts.css';
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
 // import contactimage from '../Components/Assets/Project Pic/About page/hand-making.crochet-in-bluecolor-for-about-page.jpg';
 
 
 
 
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <div className="contact-page">
-
+<Navbar />
       
        <div className="contact-hero">
         <h1>Contact Us</h1>
@@ -77,9 +79,9 @@ const Contact = () => {
             </form>
    
         </div>
-
+<Footer />
        </div>
   );
 };
 
-export default Contact;
+export default Contacts;
