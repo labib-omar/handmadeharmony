@@ -27,8 +27,10 @@
 
 import React from 'react';
 import './Popular.css';
-import { products } from "../Assets/data";
+// import { products } from "../Assets/data";
+
 import Item from '../Items/Item' 
+import all_product from '../Assets/all_product';
 
 const Popular = () => {
   return (
@@ -36,7 +38,7 @@ const Popular = () => {
       <h1>POPULAR FOR YOU</h1>
       <hr />
       <div className="popular-item">
-        {products.map(product => (
+        {all_product.map(product => (
           <Item
             key={product.id}
             id={product.id}

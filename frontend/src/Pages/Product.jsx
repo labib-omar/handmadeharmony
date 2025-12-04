@@ -25,7 +25,7 @@ import Footer from '../Components/Footer/Footer'
         <ProductDisplay product={product} />
         <DescriptionBox />
         <RelatedProducts />
-        <Footer/>
+      <Footer />
 
 
         
