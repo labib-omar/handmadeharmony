@@ -1,0 +1,134 @@
+.contact-page {
+  width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-hero {
+  width: 100%;
+  height: 320px;
+  background: url('C:\Users\hania\Desktop\AbschlussProject\handmadeharmony\frontend\src\Components\Assets\Project Pic\About page\making-hearts-with-crochet-for-about-page.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.contact-top-text {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.contact-top-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact-top-text p {
+  color: #555;
+  margin-top: 6px;
+}
+
+.contact-top-text hr{
+
+    width: 100px;
+    color: black;
+    margin: 10px auto;
+    border: 1px solid #c0392b;
+}
+
+
+.contact-box-container {
+  display: grid;
+   grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 0 80px;
+    margin-bottom: 50px;
+}
+
+.contact-box {
+  background: white;
+   padding: 25px;
+  border-radius: 8px;
+     box-shadow: 0 0 7px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+  .contact-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-box span {
+  display: block;
+  margin-top: 12px;
+    font-weight: bold;
+  color: #c0392b;
+}
+
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin: 40px 0;
+}
+
+.contact-left {
+  width: 45%;
+}
+
+.contact-left h3 {
+  font-size: 20px;
+  color: #222;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.contact-left p {
+  color: #555;
+  line-height:1.2;
+}
+
+/* FORM */
+.contact-form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background: #c0392b;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #a83224;
+}
