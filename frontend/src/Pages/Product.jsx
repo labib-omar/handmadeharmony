@@ -1,10 +1,13 @@
-  import React, { useContext } from 'react'
-  import { useParams } from 'react-router-dom'
-  import { ShopContext } from '../Context/ShopContext'
-  import Breadcrum from '../Components/Breadcrums/Breadcrum'
+import React, { useContext } from 'react'
+import { useParams } from 'react-router-dom'
+import { ShopContext } from '../Context/ShopContext'
+import Breadcrum from '../Components/Breadcrums/Breadcrum'
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox'
 import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
+import Navbar from '../Components/Navbar/Navbar'
+import Footer from '../Components/Footer/Footer'
+
 
   const Product = () => {
     const {all_product}=useContext(ShopContext)
@@ -17,10 +20,12 @@ import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
   if (!product) return <div>Product not found</div>;
     return (
       <div>
+        <Navbar />
         <Breadcrum product={product} />
         <ProductDisplay product={product} />
         <DescriptionBox />
         <RelatedProducts />
+        <Footer/>
 
 
         
