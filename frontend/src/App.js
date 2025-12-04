@@ -50,14 +50,12 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Cart from "./Pages/Cart";
 import LoginSignup from './Pages/LoginSignup';
-import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Fotter';
 
 function App() {
   return (
     <ShopContextProvider>
       <BrowserRouter>
-        <Navbar />
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
@@ -67,7 +65,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
-        <Footer />
+        
       </BrowserRouter>
     </ShopContextProvider>
   );

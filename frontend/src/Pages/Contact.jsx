@@ -1,5 +1,7 @@
 import React from "react";
 import './Css/Contact.css';
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"; 
 // import contactimage from '../Components/Assets/Project Pic/About page/hand-making.crochet-in-bluecolor-for-about-page.jpg';
 
 
@@ -10,7 +12,8 @@ const Contact = () => {
   return (
     <div className="contact-page">
 
-      
+            <Navbar />
+
        <div className="contact-hero">
         <h1>Contact Us</h1>
         {/* <img src={contactimage} alt="Contact Us" /> */}
@@ -77,7 +80,7 @@ const Contact = () => {
             </form>
    
         </div>
-
+<Footer  />
        </div>
   );
 };

@@ -1,9 +1,13 @@
 import React from 'react'
 import  './Css/LoginSignup.css'
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"; 
 
 const LoginSignup = () => {
   return (
     <div className='loginsignup'>
+            <Navbar />
+
       <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-field">
@@ -18,7 +22,7 @@ const LoginSignup = () => {
           <p>By continuing, i agree to the terms of  use & privacy policy.</p>
         </div>
       </div>
-      
+      <Footer  />
     </div>
   )
 }
