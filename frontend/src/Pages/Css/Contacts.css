@@ -1,0 +1,65 @@
+
+.contacts-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 26px;
+}
+
+.hr{
+    width: 40%;
+    border: none;
+    height: 0.9px;
+    border-radius: 50%;
+    background: #bc2e2f;
+}
+
+.contacts-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contacts-box {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 14px;
+  justify-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.contacts-box h2 {
+  margin-top: 52px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contacts-box p {
+  margin: 2px 0;
+}
+
+/* @media (max-width: 480px) {
+  .contacts-box {
+    padding: 20px 18px;
+  }
+
+  .contacts-title {
+    font-size: 1.9rem;
+  }
+} */
