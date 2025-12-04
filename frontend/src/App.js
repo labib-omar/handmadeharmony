@@ -32,7 +32,7 @@
 
 //       </Routes>
 //       <Footer />
-     
+    
 //     </BrowserRouter>
 //     </div>
 //   );
@@ -56,7 +56,7 @@ function App() {
     
     <ShopContextProvider>
       <BrowserRouter>
-
+  
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

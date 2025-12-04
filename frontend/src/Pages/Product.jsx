@@ -5,7 +5,8 @@
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox'
 import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
- 
+import Navbar from '../Components/Navbar/Navbar'
+import Footer from '../Components/Footer/Footer'
 
 
   const Product = () => {
@@ -19,10 +20,12 @@ import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
   if (!product) return <div>Product not found</div>;
     return (
       <div>
+        <Navbar />
         <Breadcrum product={product} />
         <ProductDisplay product={product} />
         <DescriptionBox />
         <RelatedProducts />
+      <Footer />
 
 
         
