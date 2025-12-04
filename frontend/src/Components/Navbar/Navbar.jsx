@@ -3,14 +3,11 @@ import "./Navbar.css";
 import logo from '../Assets/Project Pic/Logo/Logo-H-H-handmade-harmony-1.png'
 import cart_icon from '../Assets/cart-icon.png'
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { ShopContext } from '../../Context/ShopContext';
-              
+
 
 
 const Navbar = () => {
-     const {getTotalCartItems}=useContext(ShopContext);
+    
   return (
     <div className='header'>
 
@@ -84,14 +81,16 @@ const Navbar = () => {
           </li>
         </ul>
 
-      
+        <div className="nav-cart">
+          <NavLink to="/cart">
+            <img src={cart_icon} alt="cart icon" />
+          </NavLink>
 
-         <div className="nav-cart">
-                <Link to='/cart'><img src={cart_icon} alt='cart icon' /></Link>
-                
-                <div className="nav-cart-count">{getTotalCartItems()}</div>
-            </div>
+          <div className="nav-cart-count">
+            0
+          </div>
         </div>
+      </div>
     </div>
   );
 };
