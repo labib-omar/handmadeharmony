@@ -6,7 +6,7 @@
 .contact-hero {
   width: 100%;
   height: 320px;
-  background: url('C:\Users\hania\Desktop\AbschlussProject\handmadeharmony\frontend\src\Components\Assets\Project Pic\About page\making-hearts-with-crochet-for-about-page.png') center/cover no-repeat;
+  background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
   display: flex;
   justify-content: center;
   align-items: center;
