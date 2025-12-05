@@ -1,0 +1,207 @@
+
+
+
+.about-page {
+  color: #1c1c1c;
+  background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
+  background-size:cover ;
+    background-position: 100px 20px;
+}
+
+
+.about-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 26px;
+
+
+}
+
+
+.about-header h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hr{
+    width: 40%;
+    border: none;
+    height: 0.9px;
+    border-radius: 50%;
+    background: #bc2e2f;
+}
+
+.line {
+  width: 80px;
+  height:   2px;
+  background: #bc2e2f;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.about-who-we-are {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
+  margin:0px 60px;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.about-img img {
+  width: 540px;
+  height: auto;
+  border-radius: 18px;
+}
+
+.about-section-title {
+  text-align: center;
+  margin: 100px 0 10px;
+}
+
+.about-section-title h3{
+font-size: 22px;
+margin-bottom: 30px;
+}
+
+.about-section-title h2 {
+  font-size: 30px;
+}
+
+.about-team {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.team-card {
+  background: #ffffff;
+  padding: 22px;
+  text-align: center;
+  border-radius: 12px;
+  width: 260px;
+  height: auto;
+  box-shadow: 0px 0px 12px -6px #bc2e2f;
+
+}
+
+.team-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 1%;
+
+}
+
+.team-card h4 {
+  font-size: 20px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  color: #1c1c1c;
+  font-size: 16px;
+}
+
+.about-values,
+.about-dream ,
+.about-community {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.about-values h2,
+.about-dream h2,
+.about-community h2,
+.about-social h2{
+  font-size: 30px;
+}
+
+.about-values p,
+.about-dream p,
+.about-community p {
+  font-size: 22px;
+  width: 70%;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.about-community h4 {
+  margin-top: 22px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #bc2e2f;
+}
+
+
+.about-features {
+  margin: 80px 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-box {
+  background: #ffffff;
+  padding: 12px 18px 22px 18px ;
+  text-align: center;
+  border-radius: 12px;
+  width: 200px;
+  height: auto;
+  box-shadow: 0px 0px 12px -6px #bc2e2f;
+}
+
+.feature-box h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #bc2e2f;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* 
+@media (max-width: 900px) {
+  .about-who-we-are {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+
+  .about-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-values p,
+  .about-dream p,
+  .about-community p {
+    width: 95%;
+  }
+
+  .about-features {
+    flex-direction: column;
+  }
+<<<<<<< HEAD
+} */
