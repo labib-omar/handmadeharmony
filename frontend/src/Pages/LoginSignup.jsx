@@ -1,7 +1,8 @@
 import React from 'react'
 import  './Css/LoginSignup.css'
 import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer"; 
+import Footer from "../Components/Footer/Footer";
+
 
 
 const LoginSignup = () => {
@@ -21,8 +22,28 @@ const LoginSignup = () => {
         </div>
 
         <button>Continue</button>
+        {/* <p className="loginsignup-signup-button">
+  <button
+   
+    onClick={() => window.open(window.location.origin + "/login", "_blank")
+}
+        >
+    Continue
+  </button>
+</p> */}
+
 
         <p className="loginsignup-login">Alredy have an account? <span>Login here</span></p>
+{/* <p className="loginsignup-login">
+  Already have an account? 
+  <span
+   
+    onClick={() => window.open(window.location.origin + "/login", "_blank")}
+  >
+    Login here
+  </span>
+</p> */}
+
 
         <div className="loginsignup-agree">
           <input type='checkbox' name='' id='' />

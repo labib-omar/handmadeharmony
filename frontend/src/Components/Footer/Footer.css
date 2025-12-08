@@ -25,16 +25,39 @@
     list-style: none;
     gap: 60px;
     font-size: 24px;
+    
 }
+.footer-links ul{
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+    display: flex;
+    gap: 60px;
 
-.footer-links li {
-    cursor: pointer;
+    
+}
+.footer-links a {
+    text-decoration: none;    
+    color: inherit;           
     transition: 0.3s;
 }
 
-.footer-links li:hover {
+.footer-links a:hover {
     color: #bc2e2f;
 }
+
+
+
+.footer-links a:hover {
+    color: #bc2e2f;
+}
+
+.footer-links a:active {
+    color: #8a1f20;
+    transform: scale(0.97);
+}
+  
+
 
 .footer-socialmedia {
     display: flex;
