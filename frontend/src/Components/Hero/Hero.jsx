@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import arrowicon from '../Assets/arrow.png'
+import { NavLink } from 'react-router-dom'
 
 
  
@@ -18,9 +19,6 @@ function Hero() {
             <h1 className='Handmade-Harmony'>Handmade Harmony</h1>
 
             <div>
-                <div className="hero-hand-icon">                    
-                </div>
-
                 <p className='hero-description'>
                   Where every thread tells a story... 
                 </p>
@@ -34,7 +32,14 @@ function Hero() {
 
             <div className="hero-latest-btn">
                 <img src={arrowicon} alt='arrow' />
-                <button>SHOP THE MAGIC</button>
+                <NavLink to="/shop">
+                              {({ isActive }) => (
+                                <>
+                                  SHOP THE MAGIC
+                                  {isActive && <hr />}
+                                </>
+                              )}
+                            </NavLink>
             </div>
 
 
