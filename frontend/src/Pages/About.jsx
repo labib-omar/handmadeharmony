@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="about-page">
 
-      <Navbar />
+     <Navbar />
 
       <div className="about-header">
 
@@ -108,7 +108,6 @@ const About = () => {
 
      
 
-      {/* ---------------- FEATURES ---------------- */}
       <div className="about-features">
         <div className="feature-box">
           <h4>Worldwide Shipping</h4>
