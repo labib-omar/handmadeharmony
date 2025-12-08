@@ -50,12 +50,33 @@ import Contacts from './Pages/Contacts';
 import About from './Pages/About';
 import Cart from "./Pages/Cart";
 import LoginSignup from './Pages/LoginSignup';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import LegalNotice from './Pages/LgalNotice';
+
+
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
+
 
 function App() {
+
+ function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
   return (
     
     <ShopContextProvider>
       <BrowserRouter>
+        <ScrollToTop />
   
         <Routes>
           <Route path="/" element={<Home />} />
@@ -65,6 +86,8 @@ function App() {
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/legal-notice" element={<LegalNotice />} />
         </Routes>
       </BrowserRouter>
     </ShopContextProvider>

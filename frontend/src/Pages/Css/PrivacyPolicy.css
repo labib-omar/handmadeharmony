@@ -1,0 +1,87 @@
+/* General page container */
+.policy-cont {
+  /* max-width: 800px; */ 
+   padding: 40px 25px;
+
+  /* margin: 60px auto; */
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+   background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
+}
+
+/* Headings */
+.policy-cont h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #b73c3c;
+}
+
+.policy-cont h2 {
+  font-size: 1.6rem;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+.policy-cont h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Paragraphs */
+.policy-cont p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  
+}
+
+/* Lists */
+.policy-cont ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-position: inside;
+   
+}
+
+.policy-cont ul li {
+  margin-bottom: 8px;
+ 
+}
+
+/* Links */
+.policy-cont a {
+  color: #b73c3c;
+  text-decoration: none;
+}
+
+.policy-container a:hover {
+  text-decoration: underline;
+}
+
+.policy-cont h1,
+.policy-cont h2,
+.policy-cont h3,
+.policy-cont p {
+  text-align: center;
+  /* text-wrap: balance; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+/* Responsive */
+/* @media (max-width: 600px) {
+  .policy-container {
+    padding: 30px 15px;
+  }
+
+  .policy-container h1 {
+    font-size: 2rem;
+  }
+} */
