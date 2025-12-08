@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 99px;
+    padding-left: 98px;
 }
 
 .hero-intro {
@@ -19,16 +19,16 @@
 }   
 
 .H-H {
-    font-size: 44px;
+    font-size: 40px;
     color: #bc2e2f;
-    margin-left: 206px;
+    margin-left: 208px;
 }
 
 .Handmade-Harmony {
     font-size: 44px;
     color: #bc2e2f;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 26px;
 }   
 
 .hero-description{
@@ -39,15 +39,22 @@
     margin-bottom: 20px;
 }
 
-.hero-latest-btn img{
-    margin-left: 12px;
-    width: 28px;
+.hero-latest-btn {
+    margin-top: 30px;
+    margin-left: 4px;
+
 }
 
 
-.hero-latest-btn button{
-    width: 300px;
-    height: 60px;
+.hero-latest-btn img{
+    margin-right: 80px;
+    width: 28px;
+    height: auto;
+}
+
+
+.hero-latest-btn a{
+    padding: 12px;
     outline: none ;
     border: 1px solid #bc2e2f ;
     border-radius: 14px;  
@@ -56,18 +63,20 @@
     background-color: #bc2e2f;
     cursor: pointer;
     color: #f2f2f2;
-    margin-left: 44px;
-    margin-top: 28px;    
-   transition: 0.3s;
+    transition: 0.3s;
 }
 
-.hero-latest-btn button:hover {
+.hero-latest-btn  a{
+    text-decoration: none;
+    color: #f2f2f2;  
+}
+
+.hero-latest-btn a:hover {
      background: #f2f2f2;
     color: #bc2e2f;
 }
 
-
- .hero-latest-btn :active{
+ .hero-latest-btn a:active{
     background: #1c1c1c;
-    color: #bc2e2f;
+    color: #f2f2f2;
  }
