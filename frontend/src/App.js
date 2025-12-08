@@ -40,7 +40,7 @@
 
 // export default App;
 
-
+import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ShopContextProvider from './Context/ShopContext';
 import Shop from './Pages/Shop';
@@ -79,6 +79,7 @@ function App() {
         <ScrollToTop />
   
         <Routes>
+        
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contacts" element={<Contacts />} />
@@ -86,9 +87,10 @@ function App() {
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
-                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
         </Routes>
+
       </BrowserRouter>
     </ShopContextProvider>
   );
