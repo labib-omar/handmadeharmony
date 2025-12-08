@@ -26,9 +26,12 @@ const Navbar = () => {
         </div>
 
         <div className="header-login">
+          {localStorage.getItem("auth-token")?
+          <button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace("/")}}>Logout</button>:
           <NavLink to="/login">
-            <button>Signup / Login</button>
-          </NavLink>
+            <button>Login</button>
+          </NavLink>}
+
         </div>
       </div>
 
