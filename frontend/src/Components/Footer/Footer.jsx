@@ -8,18 +8,21 @@ import tiktok from '../Assets/tiktok.svg'
 import facebook from '../Assets/facebook.svg'
 import appstore from '../Assets/appstore.svg'
 import googleplay from '../Assets/google-play.svg'
+import { Link } from 'react-router-dom'
 
 
 
 
 const Footer = () => {
   return (
+
+
     <div className='footer'>
 
         <div className="footer-logo">
             <img src={logo} alt='logo' />
         </div>
-
+{/* 
         <ul className='footer-links'>
             <li>Home</li>
             <li>About </li>
@@ -27,7 +30,37 @@ const Footer = () => {
             <li>Privacy Policy</li>
             <li>Legal Notices</li>
           
+        </ul> */}
+
+        <div  className='footer-links'> 
+             <ul>
+
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contacts">Contacts</Link></li>
+        {/* <li><Link to="/privacy-policy">Privacy Policy</Link></li> */}
+        <a
+  href="/privacy-policy"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Privacy Policy
+</a>
+
+        {/* <li><Link to="/legal-notice">Legal Notice</Link></li> */}
+        <a
+  href="/legal-notice"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Legal Notice
+</a>
+
         </ul>
+
+      </div>
+      
+
         
         <div className="footer-socialmedia">
             <div className="footer-icons-container">
