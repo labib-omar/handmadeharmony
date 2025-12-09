@@ -84,6 +84,7 @@
 
 .footer-icons-container img {
     width: 24px;
+    cursor: pointer;
 }
 
 .footer-app{
