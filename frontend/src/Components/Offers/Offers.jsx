@@ -1,6 +1,5 @@
 import React from 'react'
 import './Offers.css'
-import exclusiveimage from '../Assets/making-hearts-with-crochet-for-about-page.png'
 
 const Offers = () => {
   return (

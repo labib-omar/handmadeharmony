@@ -71,3 +71,17 @@
         margin: 20px;
     }
 }
+
+.addproduct-itemfield textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 150px; /* or rows="12" handles height */
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-family: 'Poppins';
+    font-size: 14px;
+    resize: vertical; /* or none, if you want fixed height */
+}
