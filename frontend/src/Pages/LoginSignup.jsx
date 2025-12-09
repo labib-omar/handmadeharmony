@@ -6,6 +6,8 @@ import Footer from "../Components/Footer/Footer";
 
 
 const LoginSignup = () => {
+  const [agree, setAgree] = React.useState(false);
+
 
   const [state, setState] = React.useState("Login");
   const [formData, setFormData] = React.useState({
@@ -79,7 +81,20 @@ const LoginSignup = () => {
           <input name='password' value={formData.password} onChange={changeHandler} type='password' placeholder='Password' />
         </div>
 
-        <button onClick={() =>{state==="Login"?login():signup()}}>Continue</button>
+        {/* <button onClick={() =>{state==="Login"?login():signup()}}>Continue</button> */}
+
+        <button
+  onClick={() => {
+    if (!agree) {
+      alert("Please agree to the terms to continue.");
+      return;
+    }
+    state === "Login" ? login() : signup();
+  }}
+>
+  Continue
+</button>
+
 
 
         {state==="Sign Up"?
@@ -90,8 +105,31 @@ const LoginSignup = () => {
 
 
         <div className="loginsignup-agree">
-          <input type='checkbox' name='' id='' />
-          <p>By continuing, I agree to the terms of use & Privacy policy.</p>
+          {/* <input type='checkbox' name='' id='' />
+          <p>By continuing, I agree to the terms of use &nbsp;
+            <a
+  href="/privacy-policy"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Privacy Policy  
+</a>
+</p> */}
+<div className="loginsignup-agree">
+  <input
+    type="checkbox"
+    checked={agree}
+    onChange={() => setAgree(!agree)}
+  />
+  <p>
+    By continuing, I agree to the terms of use &nbsp;
+    <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+      Privacy Policy
+    </a>
+  </p>
+</div>
+
+
         </div>
 
       </div>
