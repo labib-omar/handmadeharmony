@@ -1,7 +1,6 @@
-  import React, { useContext } from 'react'
-  import { useParams } from 'react-router-dom'
-  import { ShopContext } from '../Context/ShopContext'
-  import Breadcrum from '../Components/Breadcrums/Breadcrum'
+import React, { useContext } from 'react'
+import { useParams } from 'react-router-dom'
+import { ShopContext } from '../Context/ShopContext'
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox'
 import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
@@ -21,9 +20,8 @@ import Footer from '../Components/Footer/Footer'
     return (
       <div>
         <Navbar />
-        <Breadcrum product={product} />
         <ProductDisplay product={product} />
-        <DescriptionBox />
+        <DescriptionBox product={product}/>
         <RelatedProducts />
       <Footer />
 
