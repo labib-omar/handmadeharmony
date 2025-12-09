@@ -42,10 +42,12 @@ const AddProduct = () => {
 
     // create formdata for all images
     const formData = new FormData();
+    formData.append("name", productDetails.name);
     formData.append("image", images.image);
     formData.append("image2", images.image2);
     formData.append("image3", images.image3);
     formData.append("image4", images.image4);
+
 
     let uploadResponse;
 

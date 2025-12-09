@@ -31,12 +31,19 @@ app.get("/", (req, res) => {
 const storage = multer.diskStorage({
     destination: "./upload/images",
     filename: (req, file, cb) => {
-        return cb(
-            null,
-            `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`
-        );
+        const productName = req.body.name?.replace(/\s+/g, "_").toLowerCase(); 
+        const ext = path.extname(file.originalname);
+
+        // Detect which field is being uploaded
+        let suffix = "1";
+        if (file.fieldname === "image2") suffix = "2";
+        if (file.fieldname === "image3") suffix = "3";
+        if (file.fieldname === "image4") suffix = "4";
+
+        cb(null, `${productName}_${suffix}${ext}`);
     },
 });
+
 const upload = multer({ storage: storage });
 
 // Creating Upload Endpoint for Images
