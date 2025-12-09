@@ -10,7 +10,6 @@ const AddProduct = () => {
     const[productDetails,setProductDetails] = useState({
         name:"",
         image:"",
-        category:"women",
         old_price:"",
         new_price:"",
     });
@@ -74,14 +73,6 @@ const AddProduct = () => {
                 <p>Offer Price</p>
                 <input value={productDetails.new_price} onChange={changeHandler} type="text" name="new_price" placeholder='Enter product price' />
             </div>
-        </div>
-        <div className="addproduct-itemfield">
-            <p>Category</p>
-            <select value={productDetails.category} onChange={changeHandler} name="category" className="add-product-selector">
-                <option value="women">Women</option>
-                <option value="men">Men</option>
-                <option value="kid">Kid</option>
-            </select>
         </div>
         <div className="addproduct-itemfield">
             <label htmlFor="file-input">
