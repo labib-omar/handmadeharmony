@@ -188,6 +188,11 @@ app.post("/signup", async (req, res) => {
 
 //Creating Endpoint for User Login
 app.post("/login", async (req, res) => {
+    
+    if (!req.body.email || !req.body.password) {
+    return res.status(400).json({ success: false, errors: "Email and password are required." });
+    }
+
     let user = await User.findOne({ email: req.body.email });
     if (user) {
         const passCompare = await bcrypt.compare(req.body.password, user.password);
