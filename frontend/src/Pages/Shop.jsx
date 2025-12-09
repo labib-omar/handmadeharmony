@@ -1,6 +1,5 @@
 import React from 'react'
-import Popular from '../Components/Popular/Popular'
-import Offers from '../Components/Offers/Offers'
+import AllProducts from '../Components/AllProducts/AllProducts'
 import NewCollection from '../Components/NewCollections/NewCollection'
 import NewsLetter from '../Components/NewsLetter/NewsLetter'
 import Navbar from '../Components/Navbar/Navbar'
@@ -10,9 +9,9 @@ const Shop = () => {
   return (
     <div>
       <Navbar />
-      <Popular />
-      <Offers />
+      {/*<Popular />*/}
       <NewCollection />
+      <AllProducts />
       <NewsLetter />
       <Footer />
       

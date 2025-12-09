@@ -1,9 +1,9 @@
 import React from "react";
 import "./Css/About.css";
 import About_icon from '../Components/Assets/post-1-during-making-the-doll.png';
-import sarah from '../Components/Assets/product_9.png';
-import hadil from '../Components/Assets/product_2.png';
-import jone from '../Components/Assets/product_17.png'; 
+import Sarah from '../Components/Assets/Sarah.png';
+import Hadil from '../Components/Assets/Hadil.png';
+import John from '../Components/Assets/John.png'; 
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer"; 
 
@@ -53,19 +53,19 @@ const About = () => {
 
       <div className="about-team">
         <div className="team-card">
-          <img src={jone} alt="ceo" />
-          <h4>Jone Dimer</h4>
+          <img src={John} alt="ceo" />
+          <h4>John Dimer</h4>
           <p>CEO</p>
         </div>
 
         <div className="team-card">
-          <img src={hadil} alt="founder" />
+          <img src={Hadil} alt="founder" />
           <h4>Hadil Cross</h4>
           <p>Founder - CEO</p>
         </div>
 
         <div className="team-card">
-          <img src={sarah}alt="marketing" />
+          <img src={Sarah}alt="marketing" />
           <h4>Sarah Smith</h4>
           <p>Marketing Head</p>
         </div>

@@ -2,10 +2,15 @@ import React from 'react'
 import './RelatedProducts.css'
 // import { products } from "../Assets/data";
 import Item from '../Items/Item';
-import all_product from '../Assets/all_product';
 
 
 const RelatedProduct = () => {
+  const [all_product, setAll_product] = React.useState([]);      
+      React.useEffect(() => {
+          fetch("http://localhost:4000/allproducts")
+          .then((response)=>response.json())
+          .then((data)=>setAll_product(data))
+      },[])
   return (
     <div className='relatedproducts'>
       <h1>Related Products</h1>
