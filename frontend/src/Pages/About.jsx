@@ -45,10 +45,10 @@ const About = () => {
       <div className="about-section-title">
 
         <h3>A Few Words About</h3>
+        <div className="line"></div>
 
         <h2>Our Team</h2>
 
-        <div className="line"></div>
       </div>
 
       <div className="about-team">
@@ -73,8 +73,9 @@ const About = () => {
 
 
       <div className="about-values">
-        <h2>Our Values</h2>
         <div className="line"></div>
+        
+        <h2>Our Values</h2>
         <p>
           Creativity & Care: Patience, precision, and a lot of heart go into every stitch.  
           Quality First: Durable materials and thoughtful construction for keepsakes that last.  
@@ -84,8 +85,9 @@ const About = () => {
 
 
       <div className="about-dream">
-        <h2>Our Dream</h2>
         <div className="line"></div>
+
+        <h2>Our Dream</h2>
         <p>
           To share handmade art with people who truly appreciate it—near and far—and to build  
           a community that recognizes our characters around the world.
@@ -94,8 +96,9 @@ const About = () => {
 
 
       <div className="about-community">
-        <h2>Join Our Community</h2>
         <div className="line"></div>
+
+        <h2>Join Our Community</h2>
         <p>
           Follow our journey, discover new releases, and meet our characters on Instagram,  
           Facebook, YouTube, and TikTok. Your messages, photos, and feedback help us shape  

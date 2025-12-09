@@ -19,16 +19,24 @@
 }   
 
 .H-H {
-    font-size: 40px;
+    letter-spacing: 4px;
+    font-size: 42px;
     color: #bc2e2f;
     margin-left: 208px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .Handmade-Harmony {
-    font-size: 44px;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     color: #bc2e2f;
     margin-bottom: 20px;
-    margin-left: 26px;
+    margin-left: 0px;
+
 }   
 
 .hero-description{
@@ -41,8 +49,7 @@
 
 .hero-latest-btn {
     margin-top: 30px;
-    margin-left: 4px;
-
+    margin-left: 24px;
 }
 
 
@@ -55,11 +62,11 @@
 
 .hero-latest-btn a{
     padding: 12px;
+    font-weight: 600;
     outline: none ;
     border: 1px solid #bc2e2f ;
     border-radius: 14px;  
     font-size: 24px;
-    font-family: serif;
     background-color: #bc2e2f;
     cursor: pointer;
     color: #f2f2f2;
