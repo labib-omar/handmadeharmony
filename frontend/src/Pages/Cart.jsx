@@ -2,16 +2,16 @@ import React from 'react'
 import CartItems from '../Components/CartItems/CartItems'
 import Navbar from '../Components/Navbar/Navbar'  
 import Footer from '../Components/Footer/Footer'
+import './Css/Cart.css'
+
 
 
 const Cart = () => {
   return (
-    <div>
+    <div className='Cart-page'>
       <Navbar />  
-    <div>
-       <CartItems />
-    </div>
-    <Footer />
+      <CartItems />
+      <Footer />
     </div>
   )
 }
