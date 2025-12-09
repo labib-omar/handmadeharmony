@@ -1,78 +1,134 @@
-# HandmadeHarmony -- Full Stack E-Commerce App
+# HandmadeHarmony -- Full‑Stack E‑Commerce Application
 
-HandmadeHarmony is a full-stack e-commerce web application built with a
-React frontend and a Node.js/Express backend, following the architecture
-shown in the tutorial video.
+HandmadeHarmony is a modern full‑stack e‑commerce platform designed for
+selling handmade and craft products.\
+It features a React frontend, Node.js/Express backend, and a complete
+product management system with multi‑image uploads.
 
-## Project Structure
+------------------------------------------------------------------------
+
+## 🚀 Features
+
+### 🛒 E‑Commerce Functionality
+
+-   Product listing & details pages\
+-   Shopping cart with quantity management\
+-   Responsive UI built with React\
+-   Context API for global state management
+
+### 🛠 Admin Features
+
+-   Add new products via the Admin Panel\
+-   Upload **4 required images** per product\
+-   Markdown‑friendly long descriptions\
+-   Price & discounted price handling
+
+### 📤 Image Upload System
+
+-   Uses **Multer** on the backend\
+-   Saves all images inside `backend/upload/`\
+-   Returns public URLs to the frontend\
+-   Supports 4‑image preview before uploading
+
+------------------------------------------------------------------------
+
+## 📁 Project Structure
 
     handmadeharmony/
     │
-    ├── backend/        # Express server, API routes, multer uploads
-    │   ├── uploads/    # Stored images (auto-created)
-    │   ├── package.json
-    │   └── server.js
+    ├── backend/
+    │   ├── upload/                # Auto‑generated folder for image uploads
+    │   ├── server.js              # Express server entry
+    │   ├── routes/                # API routes
+    │   ├── controllers/           # Logic for product & upload handling
+    │   └── package.json
     │
-    ├── frontend/       # React application
+    ├── frontend/
     │   ├── src/
+    │   │   ├── Components/        # UI components
+    │   │   ├── Pages/             # Application pages
+    │   │   ├── Context/           # Global state management
+    │   │   └── assets/            # Images, CSS
     │   └── package.json
     │
     └── README.md
 
-## Getting Started
+------------------------------------------------------------------------
 
-### Clone the repository
+## ⚙️ Installation & Setup
 
-    git clone https://github.com/<your-username>/handmadeharmony.git
-    cd handmadeharmony
+### 📌 Backend Setup
 
-## Backend Setup
+``` sh
+cd backend
+npm install
+npm run dev
+```
 
-    cd backend
-    npm install
+Backend default URL: **http://localhost:4000**
 
-Install multer if using image uploads:
+#### Backend Dependencies
 
-    npm install multer
+-   express\
+-   cors\
+-   multer\
+-   path\
+-   nodemon (dev)
 
-Run the backend:
+------------------------------------------------------------------------
 
-    npm run dev
+### 🎨 Frontend Setup
 
-Backend default URL: http://localhost:4000
+``` sh
+cd frontend
+npm install
+npm run dev
+```
 
-## Frontend Setup
+Frontend default URL: **http://localhost:5173** (Vite)
 
-    cd frontend
-    npm install
-    npm start
+------------------------------------------------------------------------
 
-Frontend default URL: http://localhost:3000 or http://localhost:5173
+## 📦 API Endpoints
 
-## Gitignore Notes
+### **POST /upload**
 
-### frontend/.gitignore
+Uploads product images using Multer.\
+Returns URLs for all 4 images.
 
-    node_modules/
-    dist/
+### **POST /addproduct**
 
-### backend/.gitignore
+Inserts a new product into the database, including: - name\
+- description\
+- price\
+- 4 image URLs
 
-    node_modules/
-    uploads/
+### **GET /allproducts**
 
-## Image Uploads
+Fetches every product.
 
-The backend uses Multer to handle file uploads. Uploaded images are
-stored in:
+------------------------------------------------------------------------
 
-    backend/uploads/
+## 📝 Environment Variables
 
-## Planned Features
+Create `.env` in the backend:
 
--   Product listing
--   Admin product creation
--   Image uploads
--   Shopping cart
--   Checkout flow
--   Responsive UI
+    PORT=4000
+    MONGO_URL=<your_mongodb_connection>
+
+------------------------------------------------------------------------
+
+## 🚀 Future Enhancements
+
+-   User authentication (JWT)\
+-   Payment integration (Stripe)\
+-   Admin dashboard with analytics\
+-   Product categories & filtering\
+-   Wishlist and reviews
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+This project is open‑source and free to use for learning and portfolio
+purposes.
