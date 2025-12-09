@@ -5,6 +5,14 @@ import Footer from "../Components/Footer/Footer";
 
 
 
+
+const isValidEmail = (email) => {
+  return email.includes("@");
+};
+
+
+
+
 const LoginSignup = () => {
   const [agree, setAgree] = React.useState(false);
 
@@ -83,10 +91,15 @@ const LoginSignup = () => {
 
         {/* <button onClick={() =>{state==="Login"?login():signup()}}>Continue</button> */}
 
-        <button
+        <button 
   onClick={() => {
     if (!agree) {
       alert("Please agree to the terms to continue.");
+      return;
+    }
+
+       if (!isValidEmail(formData.email)) {
+      alert("Please enter a valid email address.");
       return;
     }
     state === "Login" ? login() : signup();
