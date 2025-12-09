@@ -5,9 +5,12 @@ import remove_icon from '../Assets/cart_cross_icon.png'
 
 
 const CartItems = () => {
+
     const {getTotalCartAmount,all_product,cartItems,removeFromCart}=useContext(ShopContext);
+
   return (
     <div  className='cartitems'>
+
         <div className="cartitems-format-main">
             <p>Products</p>
             <p>Title</p>
@@ -18,6 +21,7 @@ const CartItems = () => {
 
         </div>
         <hr />
+
         {all_product.map((e)=>{
     if(cartItems[e.id]>0)
     {
@@ -58,7 +62,7 @@ const CartItems = () => {
 <button className='cartitems-checkout-button'>Proceed to Checkout</button>
 </div>
 <div className="cartitems-promocode">
-     <p>If you have a promo code,Enter it here</p>
+     <p>If you have a promo code, Enter it here</p>
      <div className="cartitems-promobox">
         <input type="text" placeholder='Promo Code' />
         <button className='cartitems-promocode-button'>Apply Coupon</button>

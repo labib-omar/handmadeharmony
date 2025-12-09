@@ -11,7 +11,7 @@ import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
      const {getTotalCartItems}=useContext(ShopContext);
-  return (
+  return (  
     <div className='header'>
 
       <div className="header-logo-container">
@@ -39,6 +39,7 @@ const Navbar = () => {
 
         <div className='nav-search'>
             {/* searh */}
+            
         </div>
 
         <ul className="nav-menu">
