@@ -22,9 +22,14 @@
 // export default DescriptionBox
 import React, { useState } from 'react'
 import './DescriptionBox.css'
+import ReactMarkdown from "react-markdown";
 
-const DescriptionBox = () => {
 
+
+
+
+const DescriptionBox = (props) => {
+  const {product} = props;
   const [activeTab, setActiveTab] = useState("description");
 
   return (
@@ -50,13 +55,15 @@ const DescriptionBox = () => {
         </div>
 
         <div className="descriptionbox-description">
+                  
+        {activeTab === "description" && (
+          <div className="description-markdown">
+            <ReactMarkdown>
+              {product.long_description}
+            </ReactMarkdown>
+          </div>
+        )}
 
-            {activeTab === "description" && (
-              <>
-                <p>This is product description here...</p>
-                <p>You can write long details about the product.</p>
-              </>
-            )}
 
             {activeTab === "reviews" && (
               <>

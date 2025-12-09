@@ -10,6 +10,8 @@ const AddProduct = () => {
     const[productDetails,setProductDetails] = useState({
         name:"",
         image:"",
+        short_description:"",
+        long_description:"",
         old_price:"",
         new_price:"",
     });
@@ -63,6 +65,18 @@ const AddProduct = () => {
         <div className="addproduct-itemfield">
             <p>Product Title</p>
             <input value={productDetails.name} onChange={changeHandler} type="text" name="name" placeholder='Enter product title' />
+        </div>
+        <div className="addproduct-itemfield">
+            <p>Product Description</p>
+            <input value={productDetails.short_description} onChange={changeHandler} type="text" name="short_description" placeholder='Enter short description' />
+            <textarea
+                value={productDetails.long_description}
+                onChange={changeHandler}
+                name="long_description"
+                placeholder="Enter long description (Markdown supported)"
+                rows="12"
+                style={{whiteSpace: "pre-wrap"}}
+            />
         </div>
         <div className="addproduct-price">
             <div className="addproduct-itemfield">
