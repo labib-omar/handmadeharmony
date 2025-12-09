@@ -5,6 +5,8 @@ const NewsLetter = () => {
   
   const [email, setEmail] = useState("");
 
+  
+
   const handleSubscribe = () => {
 
     if (email.trim() === "") {
@@ -20,7 +22,7 @@ const NewsLetter = () => {
   return (
     <div className='newsletter'>
         <h1>Get Exclusive On Your Email</h1>
-        <p>Subscribe to our newsletter and stay updated </p>
+        <p>Subscribe to our newsletter to stay updated </p>
 
         <div>
             <input 
