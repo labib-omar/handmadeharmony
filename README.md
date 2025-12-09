@@ -120,7 +120,6 @@ Create `.env` in the backend:
 
 ## 🚀 Future Enhancements
 
--   User authentication (JWT)\
 -   Payment integration (Stripe)\
 -   Admin dashboard with analytics\
 -   Product categories & filtering\
