@@ -51,7 +51,7 @@ import About from './Pages/About';
 import Cart from "./Pages/Cart";
 import LoginSignup from './Pages/LoginSignup';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
-import LegalNotice from './Pages/LgalNotice';
+import LegalNotice from './Pages/LegalNotice';
 
 
 
