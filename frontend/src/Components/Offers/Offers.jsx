@@ -1,6 +1,5 @@
 import React from 'react'
 import './Offers.css'
-import exclusiveimage from '../Assets/making-hearts-with-crochet-for-about-page.png'
 
 const Offers = () => {
   return (
@@ -18,8 +17,8 @@ const Offers = () => {
         </span>     
  
         <button>
-         <a
-          href={`mailto:contact@hh-handmade.com?subject=Custom Order Request&body=
+        <a
+           href={`mailto:contact@hh-handmade.com?subject=Custom Order Request&body=
           Dear H.H Customer Service,%0D%0A%0D%0A
           I would like to request a custom handmade piece. Here are the details:%0D%0A%0D%0A
           Description of the idea:%0D%0A[Write here]%0D%0A%0D%0A

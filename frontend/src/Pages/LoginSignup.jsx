@@ -11,8 +11,6 @@ const isValidEmail = (email) => {
 };
 
 
-
-
 const LoginSignup = () => {
   const [agree, setAgree] = React.useState(false);
 

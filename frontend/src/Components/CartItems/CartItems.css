@@ -23,7 +23,7 @@
 
 .cartitems-format {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1.4fr 1.6fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
     gap: 75px;
     padding: 20px 0px;
@@ -51,18 +51,10 @@
 }
 
 .cartitems-quantity {
-    width: 64px;
-    height: 45px;
-    border: 2px solid #bc2e2f;
-    background: #ffffff;
-    border-radius: 8px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #1c1c1c;
-    cursor: default;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 34px;
 }
 
 .cartitems-down {
@@ -77,6 +69,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    
 }
 
 .cartitems-total h1 {
