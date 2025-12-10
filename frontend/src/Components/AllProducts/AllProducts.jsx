@@ -2,7 +2,7 @@ import React from 'react';
 import './AllProducts.css';
 import Item from '../Items/Item';
 
-const Popular = () => {
+const AllProducts = () => {
   const [all_product, setAll_product] = React.useState([]);
 
   React.useEffect(() => {
@@ -12,11 +12,11 @@ const Popular = () => {
   }, []);
 
   return (
-    <div className="popular">
+    <div className="allProducts">
       <h1>ALL PRODUCTS</h1>
       <hr />
 
-      <div className="popular-item">
+      <div className="allProducts-item">
         {all_product.map((product) => (
           <Item
             key={product.id}
@@ -32,4 +32,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default AllProducts;
