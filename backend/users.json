@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "6932b646a5b18f9569f09bbd",
+    "email": "user1.hok@intergeeks.com",
+    "password": "$2b$10$bKDDUpVLlYwoZ7BK66HImeFVG7ZsqXlk081GiEdJFvXaPO84LIj8y",
+    "cartData": {
+
+    },
+    "date": "2025-12-05T10:39:02.224Z",
+    "__v": 0
+  },
+  {
+    "_id": "6932b656a5b18f9569f09bc0",
+    "email": "user2.hok@intergeeks.com",
+    "password": "$2b$10$E3GkzjPlufoXBwuj5YVR2uq36h9S0cVDwncuoGh6j7E/cgZsWxdc.",
+    "cartData": {
+
+    },
+    "date": "2025-12-05T10:39:18.969Z",
+    "__v": 0
+  },
+  {
+    "_id": "6936ab23a76276c1632f0c00",
+    "name": "Test FE",
+    "email": "userFE.hok@intergeeks.de",
+    "password": "$2b$10$ePI.oJih0Q6gOgULrsUvAOBP6dfUpfB3.QG8cFDFc/S/vHuoiboE.",
+    "cartData": {
+
+    },
+    "date": "2025-12-08T10:40:35.923Z",
+    "__v": 0
+  },
+  {
+    "_id": "6936af97826c9de5349e96c3",
+    "name": "hani",
+    "email": "hanialabbas007@gmail.com",
+    "password": "$2b$10$iXZxPPrG6Y3mxn1K6Aabge.wUa0nPlPOhEIcyQfE.NKY.f1KbuClm",
+    "cartData": {
+
+    },
+    "date": "2025-12-08T10:59:35.174Z",
+    "__v": 0
+  }
+]
