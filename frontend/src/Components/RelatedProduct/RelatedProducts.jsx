@@ -13,8 +13,9 @@ const RelatedProduct = () => {
       },[])
   return (
     <div className='relatedproducts'>
+      <hr className='dividing-bar'/>
       <h1>Related Products</h1>
-      <hr />
+      <hr className='hr-Related'/>
       <div className="relatedproducts-item">
         {all_product.map((item,i)=>{
 
