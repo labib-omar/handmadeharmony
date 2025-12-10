@@ -107,3 +107,79 @@
     padding: 0;
     margin: 0;
 }
+/* ===========================
+   ✅ TABLET RESPONSIVE
+=========================== */
+
+@media (max-width: 1024px){
+
+    .policy-container {
+        padding: 40px 20px;
+        background-size: cover;
+    }
+
+    .policy-container h1 {
+        font-size: 34px;
+    }
+
+    .policy-container h2 {
+        font-size: 22px;
+    }
+
+    .policy-container h3 {
+        font-size: 20px;
+    }
+
+    .policy-container p {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ===========================
+   ✅ MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width: 600px){
+
+    .policy-container {
+        padding: 30px 10px;
+        background-size: cover;
+    }
+
+    .policy-container h1 {
+        font-size: 26px;
+    }
+
+    .policy-hr {
+        width:40%;
+    }
+
+    .policy-container h2 {
+        font-size: 20px;
+    }
+
+    .policy-container h3 {
+        font-size: 18px;
+    }
+
+    .policy-container p {
+        font-size: 15px;
+    }
+
+    .policy-container ul {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    .policy-container hr {
+        width:60px;
+        margin:20px auto;
+    }
+
+    .policy-copyright hr {
+        width:55%;
+    }
+
+}

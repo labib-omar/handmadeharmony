@@ -318,3 +318,107 @@ margin-bottom: 20px;
     max-width: 280px;
   }
 } */
+
+
+/* =========================
+   ✅ ABOUT PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 1200px){
+
+    .about-who-we-are {
+        gap: 40px;
+    }
+
+    .about-img img {
+        width: 450px;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .about-who-we-are {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px 40px;
+    }
+
+    .about-img img {
+        width: 80%;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
+    .about-team {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .about-header h1 {
+        font-size: 26px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    .team-card {
+        width: 85%;
+    }
+
+    .about-values p,
+    .about-dream p,
+    .about-community p {
+        width: 90%;
+        font-size: 17px;
+    }
+    .about-features {
+        margin: 60px 20px;
+        gap: 20px;
+        flex-wrap: wrap;}
+
+
+}
+
+@media (max-width: 480px){
+
+    .about-header {
+        padding: 30px 10px 0;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-team {
+        gap: 20px;
+    }
+
+    /* .feature-box {
+        width: 90%;
+    } */
+     .about-features{
+        flex-direction: column;
+        align-items: center;
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+         */
+     }
+       .about-features {
+        margin: 60px 20px;
+        gap: 20px;
+        flex-wrap: wrap;}
+
+}
