@@ -84,6 +84,7 @@
 
 .footer-icons-container img {
     width: 24px;
+    cursor: pointer;
 }
 
 .footer-app{
@@ -125,4 +126,48 @@ gap: 20px;
 .footer-copyright p {
     font-size: 14px;
     color: #1c1c1c;
+}
+/* =========================
+   ✅ FOOTER RESPONSIVE
+========================= */
+
+@media (max-width: 900px){
+
+    .footer-links ul {
+        gap:30px;
+        font-size:20px;
+    }
+    .footer-copyright
+    {
+        font-size:12px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .footer-logo img {
+        height: 100px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .footer-socialmedia {
+        gap:10px;
+    }
+
+    .footer-app img {
+        width:140px;
+    }
+    .footer-copyright{
+        font-size:12px;
+        text-align: center;
+
+    }
+
 }

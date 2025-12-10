@@ -63,25 +63,65 @@ const Footer = () => {
 
         
         <div className="footer-socialmedia">
-            <div className="footer-icons-container">
-                <img src={instagramicon} alt='instagram-icon' />
-            </div>
 
+          
+          <a 
+            href="https://www.instagram.com/popular/crochet-doll/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <div className="footer-icons-container">
-                <img src={tiktok} alt='tiktok-icon' />
-            </div>
 
-            <div className="footer-icons-container">
-                <img src={facebook} alt='facebook-icon' />
+              <img src={instagramicon} alt='instagram-icon' />
             </div>
-                
+          </a>
+            
+
+          <a 
+            href="https://www.tiktok.com/search?q=crochet%20dolls&t=1765293684798" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <div className="footer-icons-container">
-                <img src={pintestericon} alt='pintester-icon' />
+
+              <img src={tiktok} alt="tiktok-icon" />
             </div>
-                
+          </a>
+
+
+          <a 
+            href="https://www.facebook.com/TheCrochetDolls/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <div className="footer-icons-container">
-                <img src={whatsapp} alt='whatsapp-icon' />
+
+              <img src={facebook} alt='facebook-icon' />
+            </div>
+          </a>     
+
+
+          <a 
+            href="https://www.pinterest.com/search/pins/?q=crochet%20dolls&rs=typed" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="footer-icons-container">
+                
+              <img src={pintestericon} alt='pintester-icon' />
+            </div>
+          </a>
+
+          <a 
+            href="https://www.whatsapp.com/?lang=de" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="footer-icons-container">
+         
+              <img src={whatsapp} alt='whatsapp-icon' />
             </div>  
+          </a>
 
         </div>
 
