@@ -90,3 +90,69 @@
     padding: 0;
     margin: 0;
 }
+
+
+/* ===========================
+   ✅ TABLET RESPONSIVE
+=========================== */
+
+@media (max-width: 1024px){
+
+    .Legal-container {
+        padding: 40px 20px;
+       
+      
+        height:94vh;
+    }
+
+    .Legal-container h1 {
+        font-size: 34px;
+    }
+
+    .Legal-container h2 {
+        font-size: 22px;
+    }
+
+    .Legal-container p {
+        font-size: 17px;
+    }
+
+}
+
+/* ===========================
+   ✅ MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width: 600px){
+
+    .Legal-container {
+        padding: 30px 10px;
+        background-size: cover;
+    }
+
+    .Legal-container h1 {
+        font-size: 26px;
+    }
+
+    .Legal-hr {
+        width:40%;
+    }
+
+    .Legal-container h2 {
+        font-size: 20px;
+    }
+
+    .Legal-container p {
+        font-size: 15px;
+    }
+
+    .Legal-container hr {
+        width: 60px;
+        margin: 25px auto;
+    }
+
+    .Legal-copyright hr {
+        width: 55%;
+    }
+
+}
