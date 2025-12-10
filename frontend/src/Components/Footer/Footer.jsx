@@ -127,17 +127,32 @@ const Footer = () => {
 
          <div className='footer-app'>
                   
-            <div>
-             <img src={appstore} alt='app-store-icon' />
-            </div>
+          <div>
+            <a 
+              href="https://www.apple.com/app-store/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+            <img src={appstore} alt='app-store-icon' />         
+          
+            </a>
+          </div>
               
-            <div>
-             <img src={googleplay} alt='google-play-icon' />
-            </div>
+          <div>
+            <a 
+              href="https://play.google.com/store/games?device=windows" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+             
+             
+            <img src={googleplay} alt='google-play-icon' />
+             
+            </a>
+          </div>
                         
          </div>
-
-        
+ 
 
         <div className="footer-copyright">
             <hr/>

@@ -14,7 +14,7 @@ const NewCollection = () => {
   return (
     <div className="new-collections">
       
-      <h1>NEW DESIGNES</h1>
+      <h1>NEW DESIGNS</h1>
       
       <hr />
 

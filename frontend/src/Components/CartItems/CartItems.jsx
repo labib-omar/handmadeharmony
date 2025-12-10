@@ -61,6 +61,7 @@ const CartItems = () => {
 </div>
 <button className='cartitems-checkout-button'>Proceed to Checkout</button>
 </div>
+
 <div className="cartitems-promocode">
      <p>If you have a promo code, Enter it here</p>
      <div className="cartitems-promobox">
