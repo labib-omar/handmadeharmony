@@ -32,7 +32,7 @@ const ProductDisplay = (props) => {
             <img src={staricon} alt='' />
             <img src={staricon} alt='' />
             <img src={stardullicon} alt='' />
-            <p>(125)</p>
+            <p>(28)</p>
             </div>
             <div className="productdisplay-right-prices">
                 <div className="productdisplay-right-price-old">${product.old_price}</div>
@@ -41,7 +41,10 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-description">
                 {product.short_description}
             </div>
-                <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+
+            <button onClick={()=>{addToCart(product.id)}}>
+              ADD TO CART
+            </button>
 
 
       </div>
