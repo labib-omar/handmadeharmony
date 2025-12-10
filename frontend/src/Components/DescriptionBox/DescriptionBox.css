@@ -3,7 +3,8 @@
 .descriptionbox {
     width: 80%;
     margin: auto;
-    background-color: #ffffff;
+    background-color: rgba(242, 242, 242, 0.5);
+    margin-bottom: 40px;
 }
 
 .description-navigator {

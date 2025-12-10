@@ -34,17 +34,19 @@ const ProductDisplay = (props) => {
             <img src={stardullicon} alt='' />
             <p>(28)</p>
             </div>
-            <div className="productdisplay-right-prices">
-                <div className="productdisplay-right-price-old">${product.old_price}</div>
-                <div className="productdisplay-right-price-new">${product.new_price}</div>
-            </div>
+          
             <div className="productdisplay-right-description">
                 {product.short_description}
             </div>
-
-            <button onClick={()=>{addToCart(product.id)}}>
+  <div className="productdisplay-right-prices">
+                <div className="productdisplay-right-price-old">${product.old_price}</div>
+                <div className="productdisplay-right-price-new">${product.new_price}</div>
+             
+             <button onClick={()=>{addToCart(product.id)}}>
               ADD TO CART
             </button>
+            </div>
+           
 
 
       </div>
