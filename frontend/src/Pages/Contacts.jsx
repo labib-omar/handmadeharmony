@@ -106,13 +106,13 @@ const Contacts = () => {
             maxLength="300"
           ></textarea>
 
-          <button type="submit">
            <a
             href="mailto:contact@hh-handmade.com?subject=Customer Inquiry&body=Dear H.H Customer Service,"
             >
-            SEND MESSAGE
+              <button type="submit">
+                SEND MESSAGE
+              </button>
            </a>
-          </button>
 
         </form>
 

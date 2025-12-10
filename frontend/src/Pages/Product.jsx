@@ -6,8 +6,7 @@ import DescriptionBox from '../Components/DescriptionBox/DescriptionBox'
 import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
-
-
+import './Css/Product.css'
   const Product = () => {
     const {all_product}=useContext(ShopContext)
     const{productId}=useParams();
@@ -18,14 +17,13 @@ import Footer from '../Components/Footer/Footer'
   console.log("URL PARAM ID => ", productId);
   if (!product) return <div>Product not found</div>;
     return (
-      <div>
+      <div className='product-page'>
+
         <Navbar />
         <ProductDisplay product={product} />
         <DescriptionBox product={product}/>
         <RelatedProducts />
-      <Footer />
-
-
+        <Footer />
         
       </div>
     )
