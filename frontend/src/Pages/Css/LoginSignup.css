@@ -1,185 +1,181 @@
-.loginsignup-page{
-    background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
+.loginsignup-page {
+  background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
+  background-size: contain;
+  background-position: 0px 500px;
 }
 
 .loginsignup {
-    width: 100%;
-    height: 68vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 68vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginsignup-container {
-    width: 400px;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 22px;
-    box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 400px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .loginsignup-container h1 {
-    font-size: 34px;
-    font-weight: 600;
-    color: #1c1c1c;
-    text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #1c1c1c;
+  text-align: center;
 }
 
 .loginsignup-field {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .loginsignup-field input {
-    height: 45px;
-    padding-left: 15px;
-    font-size: 15px;
-    border: 1px solid #c9c9c9;
-    border-radius: 12px;
-    outline: none;
+  height: 45px;
+  padding-left: 15px;
+  font-size: 15px;
+  border: 1px solid #c9c9c9;
+  border-radius: 12px;
+  outline: none;
 }
 
 .loginsignup-container button {
-    width: 100%;
-    height: 50px;
-    border: none;
-    background: #bc2e2f;
-    color: #f2f2f2;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #bc2e2f;
+  color: #f2f2f2;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .loginsignup-container button:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.loginsignup-container button:active{
-    background: #1c1c1c;
-    color: #f2f2f2;
- }
-
+.loginsignup-container button:active {
+  background: #1c1c1c;
+  color: #f2f2f2;
+}
 
 .loginsignup-login {
-    font-size: 14px;
-    color: #1c1c1c;
-    text-align: center;
+  font-size: 14px;
+  color: #1c1c1c;
+  text-align: center;
 }
 
 .loginsignup-login span {
-    color: #bc2e2f;
-    cursor: pointer;
-    font-weight: 600;
+  color: #bc2e2f;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .loginsignup-agree {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 16px;
 }
 
 .loginsignup-agree p {
-    font-size: 14px;
-    color: #1c1c1c;
-    text-align: center;
+  font-size: 14px;
+  color: #1c1c1c;
+  text-align: center;
 }
 
 /* ===========================
     TABLETS
    =========================== */
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
+  .loginsignup {
+    height: auto;
+    padding: 40px 0;
+  }
 
-    .loginsignup {
-        height: auto;
-        padding: 40px 0;
-    }
+  .loginsignup-container {
+    width: 360px;
+  }
 
-    .loginsignup-container {
-        width: 360px;
-    }
+  .loginsignup-container h1 {
+    font-size: 30px;
+  }
 
-    .loginsignup-container h1 {
-        font-size: 30px;
-    }
-
-    .loginsignup-field input {
-        font-size: 14px;
-    }
+  .loginsignup-field input {
+    font-size: 14px;
+  }
 }
-
 
 /* ===========================
     MOBILE
    =========================== */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  .loginsignup-page {
+    background-position: center;
+    background-size: cover;
+  }
 
-    .loginsignup-page {
-        background-position: center;
-        background-size: cover;
-    }
+  .loginsignup {
+    padding: 20px 0;
+    height: auto;
+  }
 
-    .loginsignup {
-        padding: 20px 0;
-        height: auto;
-    }
+  .loginsignup-container {
+    width: 90%;
+    padding: 20px;
+  }
 
-    .loginsignup-container {
-        width: 90%;
-        padding: 20px;
-    }
+  .loginsignup-container h1 {
+    font-size: 24px;
+  }
 
-    .loginsignup-container h1 {
-        font-size: 24px;
-    }
+  .loginsignup-field {
+    gap: 10px;
+  }
 
-    .loginsignup-field {
-        gap: 10px;
-    }
+  .loginsignup-field input {
+    height: 40px;
+    font-size: 14px;
+  }
 
-    .loginsignup-field input {
-        height: 40px;
-        font-size: 14px;
-    }
+  .loginsignup-container button {
+    height: 45px;
+    font-size: 15px;
+  }
 
-    .loginsignup-container button {
-        height: 45px;
-        font-size: 15px;
-    }
-
-    .loginsignup-login {
-        font-size: 13px;
-    }
+  .loginsignup-login {
+    font-size: 13px;
+  }
 }
-
 
 /* ===========================
     SMALL PHONES
    =========================== */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
+  .loginsignup-container h1 {
+    font-size: 20px;
+  }
 
-    .loginsignup-container h1 {
-        font-size: 20px;
-    }
+  .loginsignup-field input {
+    font-size: 13px;
+  }
 
-    .loginsignup-field input {
-        font-size: 13px;
-    }
+  .loginsignup-container button {
+    font-size: 13px;
+  }
 
-    .loginsignup-container button {
-        font-size: 13px;
-    }
-
-    .loginsignup-agree p {
-        font-size: 12px;
-    }
+  .loginsignup-agree p {
+    font-size: 12px;
+  }
 }
