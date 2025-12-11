@@ -1,7 +1,6 @@
-
 .home-page {
-    background-image: url("../../Components/Assets/Project Pic/Home page/ice-cream-crochet-for-home-page.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -100px;
+  background-image: url("../../Components/Assets/Project Pic/Home page/ice-cream-crochet-for-home-page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -100px;
 }

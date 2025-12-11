@@ -1,26 +1,21 @@
-import React from 'react'
-import AllProducts from '../Components/AllProducts/AllProducts'
-import NewCollection from '../Components/NewCollections/NewCollection'
-import Offers from '../Components/Offers/Offers'
-import Navbar from '../Components/Navbar/Navbar'
-import Footer from '../Components/Footer/Footer'
-import './Css/Shop.css'
+import React from "react";
+import AllProducts from "../Components/AllProducts/AllProducts";
+import NewCollection from "../Components/NewCollections/NewCollection";
+import Offers from "../Components/Offers/Offers";
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
+import "./Css/Shop.css";
 
 const Shop = () => {
   return (
-    <div className='shop-page'>
-      
+    <div className="shop-page">
       <Navbar />
-      {/*<Popular />*/}
       <NewCollection />
       <Offers />
       <AllProducts />
       <Footer />
-      
     </div>
-  )
-}
+  );
+};
 
-export default Shop
-
-
+export default Shop;

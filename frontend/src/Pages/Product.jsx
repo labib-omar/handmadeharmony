@@ -1,32 +1,30 @@
-import React, { useContext } from 'react'
-import { useParams } from 'react-router-dom'
-import { ShopContext } from '../Context/ShopContext'
-import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
-import DescriptionBox from '../Components/DescriptionBox/DescriptionBox'
-import RelatedProducts from '../Components/RelatedProduct/RelatedProducts'
-import Navbar from '../Components/Navbar/Navbar'
-import Footer from '../Components/Footer/Footer'
-import './Css/Product.css'
-  const Product = () => {
-    const {all_product}=useContext(ShopContext)
-    const{productId}=useParams();
-    const product =all_product.find((e)=> e.id === Number (productId))
-   
-        console.log("PRODUCT DATA => ", product);
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
+import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
+import DescriptionBox from "../Components/DescriptionBox/DescriptionBox";
+import RelatedProducts from "../Components/RelatedProduct/RelatedProducts";
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
+import "./Css/Product.css";
+const Product = () => {
+  const { all_product } = useContext(ShopContext);
+  const { productId } = useParams();
+  const product = all_product.find((e) => e.id === Number(productId));
+
+  console.log("PRODUCT DATA => ", product);
   console.log("ALL PRODUCTS => ", all_product);
   console.log("URL PARAM ID => ", productId);
   if (!product) return <div>Product not found</div>;
-    return (
-      <div className='product-page'>
+  return (
+    <div className="product-page">
+      <Navbar />
+      <ProductDisplay product={product} />
+      <DescriptionBox product={product} />
+      <RelatedProducts />
+      <Footer />
+    </div>
+  );
+};
 
-        <Navbar />
-        <ProductDisplay product={product} />
-        <DescriptionBox product={product}/>
-        <RelatedProducts />
-        <Footer />
-        
-      </div>
-    )
-  }
-
-  export default Product
+export default Product;

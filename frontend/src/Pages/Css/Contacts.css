@@ -1,12 +1,8 @@
-
-
-
 .contact-page {
   color: #1c1c1c;
   background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
   background-size: contain;
   background-position: 0px 500px;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 .contact-hero {
@@ -24,12 +20,12 @@
   text-transform: upperase;
 }
 
-.contact-hero hr{
-    width: 48%;
-    border: none;
-    height: 0.9px;
-    border-radius: 50%;
-    background: #bc2e2f;
+.contact-hero hr {
+  width: 48%;
+  border: none;
+  height: 0.9px;
+  border-radius: 50%;
+  background: #bc2e2f;
 }
 
 .contact-top-text {
@@ -46,16 +42,14 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
   margin: 0 36px 100px 36px;
-  
 }
 
 .contact-box {
   background: #ffffff;
-  padding: 22px ;
+  padding: 22px;
   border-radius: 12px;
   box-shadow: 0px 0px 12px -6px #bc2e2f;
   text-align: center;
-  
 }
 
 .contact-box h3 {
@@ -68,10 +62,9 @@
   margin-top: 10px;
   font-weight: bold;
   color: #bc2e2f;
-
 }
 
-.hr{
+.hr {
   margin: auto;
   width: 55%;
   border: none;
@@ -93,12 +86,11 @@
   flex-direction: column;
   margin-left: 36px;
   gap: 12px;
-  
 }
 
 .contact-left h3 {
   font-size: 22px;
-  color: #bc2e2f ;
+  color: #bc2e2f;
 }
 
 .contact-left h2 {
@@ -109,10 +101,9 @@
 
 .contact-left p {
   color: #1c1c1c;
-  line-height:1.6;
+  line-height: 1.6;
   font-size: 20px;
 }
-
 
 .contact-form {
   margin-right: 36px;
@@ -142,7 +133,7 @@
   height: 40px;
   padding: 10px;
   transition: 0.3s;
-  outline: none ;
+  outline: none;
   border: none;
   font-size: 16px;
   background: #bc2e2f;
@@ -151,91 +142,86 @@
   cursor: pointer;
 }
 
-.contact-form button a{
-   text-decoration: none;
-    color: inherit;
+.contact-form button a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.contact-form button:active{
-    background: #1c1c1c;
-    color: #f2f2f2;
+.contact-form button:active {
+  background: #1c1c1c;
+  color: #f2f2f2;
 }
 /* ===================================
    ✅ TABLET RESPONSIVE
 ====================================== */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
+  .contact-box-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 20px 80px;
+  }
 
-    .contact-box-container {
-        grid-template-columns: repeat(2,1fr);
-        margin: 0 20px 80px;
-    }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+  }
 
-    .contact-section {
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 20px;
-    }
+  .contact-left {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+  }
 
-    .contact-left {
-        width: 90%;
-        margin:0;
-        text-align:center;
-    }
-
-    .contact-form {
-        width:90%;
-        margin:20px 0;
-        align-items:center;
-    }
-
+  .contact-form {
+    width: 90%;
+    margin: 20px 0;
+    align-items: center;
+  }
 }
-
 
 /* ===================================
    ✅ MOBILE RESPONSIVE
 ====================================== */
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
+  .contact-hero h1 {
+    font-size: 26px;
+  }
 
-    .contact-hero h1 {
-        font-size: 26px;
-    }
+  .contact-top-text h2 {
+    font-size: 22px;
+  }
 
-    .contact-top-text h2 {
-        font-size: 22px;
-    }
+  .contact-box-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 0 10px 50px;
+  }
 
-    .contact-box-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin: 0 10px 50px;
-    }
+  .contact-box h3 {
+    font-size: 20px;
+  }
 
-    .contact-box h3 {
-        font-size:20px;
-    }
+  .contact-box p {
+    font-size: 16px;
+  }
 
-    .contact-box p {
-        font-size:16px;
-    }
+  .contact-left h2 {
+    font-size: 22px;
+  }
 
-    .contact-left h2 {
-        font-size: 22px;
-    }
+  .contact-left p {
+    font-size: 17px;
+  }
 
-    .contact-left p {
-        font-size: 17px;
-    }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size:16px;
-    }
-
-    .contact-form button {
-        width:130px;
-        font-size:14px;
-    }
-
+  .contact-form button {
+    width: 130px;
+    font-size: 14px;
+  }
 }

@@ -1,326 +1,325 @@
 /* --- Base Styles (Desktop First) --- */
 
-.header{
-    width: 100%;
+.header {
+  width: 100%;
 }
 
-.header-logo-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(242, 242, 242, 0.25);
-    height: 24vh;
+.header-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(242, 242, 242, 0.25);
+  height: 24vh;
 }
 
-.free{
-    margin-left: 8px;
-    width: 152px;
+.free {
+  margin-left: 8px;
+  width: 152px;
 }
 
 /* Hide the mobile menu toggle by default on desktop */
 .mobile-menu-toggle {
-    display: none;
+  display: none;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
-    width: auto; 
-    height: 210px;
+  width: auto;
+  height: 210px;
 }
 
 /* DESKTOP LOGIN/CART CONTAINER */
 .header-login {
-    display: flex; 
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.header-login button{
-    width: 152px;
-    height: 40px;
-    outline: none ;
-    border: 1px solid #bc2e2f ;
-    border-radius: 8px;  
-    color: #bc2e2f ;
-    font-size: 18px;
-    font-weight: 600 ;
-    background-color: rgba(242, 242, 242, 0.4);
-    cursor: pointer;
-    margin-right: 26px ;
-    transition: 0.3s;
+.header-login button {
+  width: 152px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #bc2e2f;
+  border-radius: 8px;
+  color: #bc2e2f;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgba(242, 242, 242, 0.4);
+  cursor: pointer;
+  margin-right: 26px;
+  transition: 0.3s;
 }
 
 .header-login button:hover {
-    background: #bc2e2f;
-    color: #f2f2f2;
+  background: #bc2e2f;
+  color: #f2f2f2;
 }
 
-.header-login button:active{
-    background: #1c1c1c;
-    color: #f2f2f2;
+.header-login button:active {
+  background: #1c1c1c;
+  color: #f2f2f2;
 }
 
-.navbar{
-    position: relative;
-    display:flex;
-    align-items: center;
-    padding: 10px 54px;
-    box-shadow: 0px 0px 40px -16px #bc2e2f;
-    background-color: rgba(242, 242, 242, 0.5);
-    height: 30px;
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 54px;
+  box-shadow: 0px 0px 40px -16px #bc2e2f;
+  background-color: rgba(242, 242, 242, 0.5);
+  height: 30px;
 }
 
-.nav-search{
-    width: 50px;
-    font-size: 26px;
-    margin-left: auto;  
+.nav-search {
+  width: 50px;
+  font-size: 26px;
+  margin-left: auto;
 }
 
-.nav-menu{
-    position: absolute;             
-    left: 50%;                      
-    transform: translateX(-50%);    
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    margin: 0;
-    padding: 0;
+.nav-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-    color: #1c1c1c;
-    font-size: 26px;
-    cursor: pointer;
-    transition: 0.3s;
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  color: #1c1c1c;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .nav-menu li:hover {
-    color: #bc2e2f;
+  color: #bc2e2f;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: inherit; 
+  text-decoration: none;
+  color: inherit;
 }
 
-.nav-menu hr{
-    border: none;
-    width: 100%;
-    height: 3px;
-    border-radius: 1.1px;
-    background-color: #bc2e2f ;
+.nav-menu hr {
+  border: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.1px;
+  background-color: #bc2e2f;
 }
 
 /* DESKTOP CART STYLES (inside .navbar) */
 /* This cart is displayed by default on desktop, hidden on mobile */
-.nav-cart{
-    /* Positioned absolutely on the right of the .navbar container */
-    margin-left: auto; /* Pushes it to the far right */
-    position: relative;             
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin-right: 0;
+.nav-cart {
+  /* Positioned absolutely on the right of the .navbar container */
+  margin-left: auto; /* Pushes it to the far right */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 0;
 }
 
 /* Hide the cart inside the header on desktop */
 .mobile-cart-visible {
-    display: none;
+  display: none;
 }
 
 .nav-cart img {
-    cursor: pointer;
-    width: auto; 
-    height: 60px;
-    margin-bottom: 5px;
+  cursor: pointer;
+  width: auto;
+  height: 60px;
+  margin-bottom: 5px;
 }
 
-.nav-cart-count{
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    margin-top: -40px;
-    margin-left: 66px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 18px;
-    background: #bc2e2f;
-    color: #f2f2f2;
+.nav-cart-count {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-top: -40px;
+  margin-left: 66px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  background: #bc2e2f;
+  color: #f2f2f2;
 }
-
 
 /* --- Mobile-Specific Styles (Max-width 800px) --- */
 
-@media(max-width: 800px) {
-    /* Hide the cart inside the navbar on mobile */
-    .desktop-cart-visible {
-        display: none !important; /* Use !important to override the margin-left: auto from .nav-cart */
-    }
+@media (max-width: 800px) {
+  /* Hide the cart inside the navbar on mobile */
+  .desktop-cart-visible {
+    display: none !important; /* Use !important to override the margin-left: auto from .nav-cart */
+  }
 
-    /* Show the cart inside the header on mobile */
-    .mobile-cart-visible {
-        /* Re-enable display for mobile layout */
-        display: flex; 
-    }
+  /* Show the cart inside the header on mobile */
+  .mobile-cart-visible {
+    /* Re-enable display for mobile layout */
+    display: flex;
+  }
 
-    /* 1. Header Structure and Logo Centering */
-    .header-logo-container {
-        height: 12vh;
-        padding: 0 0px; 
-        position: relative; 
-        justify-content: center; 
-    }
+  /* 1. Header Structure and Logo Centering */
+  .header-logo-container {
+    height: 12vh;
+    padding: 0 0px;
+    position: relative;
+    justify-content: center;
+  }
 
-    .logo {
-        margin: 0 auto; 
-    }
-    .logo img {
-        height: 100px; 
-    }
-    
-    .free {
-        display: none;
-    }
+  .logo {
+    margin: 0 auto;
+  }
+  .logo img {
+    height: 100px;
+  }
 
-    .navbar {
-        display: none;
-    }
+  .free {
+    display: none;
+  }
 
-    /* Mobile Menu Toggle (Hamburger) Spacing */
-    .mobile-menu-toggle {
-        display: block;
-        cursor: pointer;
-        z-index: 100;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 20px; 
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    .hamburger span {
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: #bc2e2f;
-        margin: 5px 0;
-        transition: 0.4s;
-        border-radius: 2px;
-    }
+  .navbar {
+    display: none;
+  }
 
-    /* 3. Collapsible Menu Wrapper */
-    .mobile-nav-menu-wrapper {
-        position: absolute;
-        top: 12vh; 
-        left: 0;
-        width: 70%; 
-        max-width: 300px;
-        background-color: rgba(242, 242, 242, 0.25); 
-        padding-bottom: 10px; 
-        box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.2);
-        z-index: 90;
-        overflow: hidden;
-    }
+  /* Mobile Menu Toggle (Hamburger) Spacing */
+  .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    .mobile-nav-menu {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        padding: 20px 0 0 0;
-        margin: 0;
-    }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #bc2e2f;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+  }
 
-    .mobile-nav-menu li {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 0px;
-        color: #1c1c1c;
-        font-size: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-        padding: 10px 20px;
-    }
+  /* 3. Collapsible Menu Wrapper */
+  .mobile-nav-menu-wrapper {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgba(242, 242, 242, 0.25);
+    padding-bottom: 10px;
+    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 90;
+    overflow: hidden;
+  }
 
-    .mobile-nav-menu li:hover {
-        color: #bc2e2f; 
-        background-color: rgba(188, 46, 47, 0.1);
-    }
-    
-    .mobile-nav-menu a {
-        text-decoration: none;
-        color: inherit;
-        display: flex; 
-        flex-direction: column;
-        align-items: flex-start;
-        width: fit-content; 
-    }
-    
-    .mobile-nav-menu li hr {
-        border: none;
-        width: 100%; 
-        max-width: none;
-        height: 3px;
-        border-radius: 1.1px;
-        background-color: #bc2e2f;
-        margin-left: 0; 
-        margin-top: 5px; 
-    }
+  .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 0 0 0;
+    margin: 0;
+  }
 
-    /* 4. Login and Cart Positioning for Mobile Header */
-    .header-login {
-        position: absolute; 
-        right: 20px; 
-        top: 50%;
-        transform: translateY(-50%);
-        width: auto;
-        display: flex;
-        align-items: center;
-    }
-    
-    .header-login button {
-        width: 100px;
-        font-size: 14px;
-        margin-right: 5px; 
-    }
+  .mobile-nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0px;
+    color: #1c1c1c;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+  }
 
-    /* MOBILE CART STYLES (inside .header-login) */
-    .nav-cart {
-        position: relative; 
-        /* Reset desktop styles */
-        margin-left: 0;
-        margin-right: 0;
-        /* Mobile size */
-        width: 40px;
-        height: 40px;
-    }
-    
-    .nav-cart img {
-        height: 40px;
-        margin-bottom: 0;
-    }
+  .mobile-nav-menu li:hover {
+    color: #bc2e2f;
+    background-color: rgba(188, 46, 47, 0.1);
+  }
 
-    .nav-cart-count {
-        width: 20px;
-        height: 20px;
-        font-size: 12px;
-        margin-top: -30px; 
-        margin-left: 30px; 
-    }
+  .mobile-nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+  }
+
+  .mobile-nav-menu li hr {
+    border: none;
+    width: 100%;
+    max-width: none;
+    height: 3px;
+    border-radius: 1.1px;
+    background-color: #bc2e2f;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  /* 4. Login and Cart Positioning for Mobile Header */
+  .header-login {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-login button {
+    width: 100px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  /* MOBILE CART STYLES (inside .header-login) */
+  .nav-cart {
+    position: relative;
+    /* Reset desktop styles */
+    margin-left: 0;
+    margin-right: 0;
+    /* Mobile size */
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-cart img {
+    height: 40px;
+    margin-bottom: 0;
+  }
+
+  .nav-cart-count {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin-top: -30px;
+    margin-left: 30px;
+  }
 }
