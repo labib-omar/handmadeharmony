@@ -1,40 +1,34 @@
 import React from "react";
 import "./Css/About.css";
-import About_icon from '../Components/Assets/post-1-during-making-the-doll.png';
-import Sarah from '../Components/Assets/Sarah.png';
-import Hadil from '../Components/Assets/Hadil.png';
-import John from '../Components/Assets/John.png'; 
+import About_icon from "../Components/Assets/post-1-during-making-the-doll.png";
+import Sarah from "../Components/Assets/Sarah.png";
+import Hadil from "../Components/Assets/Hadil.png";
+import John from "../Components/Assets/John.png";
 import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer"; 
+import Footer from "../Components/Footer/Footer";
 
-const About = () => { 
+const About = () => {
   return (
     <div className="about-page">
-
-     <Navbar />
+      <Navbar />
 
       <div className="about-header">
-
         <h1>About Us</h1>
-        
-        <hr className='hr'/>
 
+        <hr className="hr" />
       </div>
 
       <div className="about-who-we-are">
-
         <div className="about-text">
-
           <h2>Who We Are</h2>
 
           <p>
-            At H.H, every stitch tells a story. Founded by Hadil, a lifelong lover 
-            of colors, textures, and tiny details, we turn simple threads into dolls 
-            and figures full of personality. What began as a relaxing hobby quickly 
-            grew into a passion for creating characters that spark joy, comfort, 
-            and a sense of childhood wonder.
+            At H.H, every stitch tells a story. Founded by Hadil, a lifelong
+            lover of colors, textures, and tiny details, we turn simple threads
+            into dolls and figures full of personality. What began as a relaxing
+            hobby quickly grew into a passion for creating characters that spark
+            joy, comfort, and a sense of childhood wonder.
           </p>
-
         </div>
 
         <div className="about-img">
@@ -43,12 +37,10 @@ const About = () => {
       </div>
 
       <div className="about-section-title">
-
         <h3>A Few Words About</h3>
         <div className="line"></div>
 
         <h2>Our Team</h2>
-
       </div>
 
       <div className="about-team">
@@ -65,51 +57,48 @@ const About = () => {
         </div>
 
         <div className="team-card">
-          <img src={Sarah}alt="marketing" />
+          <img src={Sarah} alt="marketing" />
           <h4>Sarah Smith</h4>
           <p>Marketing Head</p>
         </div>
       </div>
 
-
       <div className="about-values">
         <div className="line"></div>
-        
+
         <h2>Our Values</h2>
         <p>
-          Creativity & Care: Patience, precision, and a lot of heart go into every stitch.  
-          Quality First: Durable materials and thoughtful construction for keepsakes that last.  
-          Fair & Transparent: Honest pricing that respects both the craft and our customers.
+          Creativity & Care: Patience, precision, and a lot of heart go into
+          every stitch. Quality First: Durable materials and thoughtful
+          construction for keepsakes that last. Fair & Transparent: Honest
+          pricing that respects both the craft and our customers.
         </p>
       </div>
-
 
       <div className="about-dream">
         <div className="line"></div>
 
         <h2>Our Dream</h2>
         <p>
-          To share handmade art with people who truly appreciate it—near and far—and to build  
-          a community that recognizes our characters around the world.
+          To share handmade art with people who truly appreciate it—near and
+          far—and to build a community that recognizes our characters around the
+          world.
         </p>
       </div>
-
 
       <div className="about-community">
         <div className="line"></div>
 
         <h2>Join Our Community</h2>
         <p>
-          Follow our journey, discover new releases, and meet our characters on Instagram,  
-          Facebook, YouTube, and TikTok. Your messages, photos, and feedback help us shape  
-          future designs and keep the harmony in Handmade Harmony.
+          Follow our journey, discover new releases, and meet our characters on
+          Instagram, Facebook, YouTube, and TikTok. Your messages, photos, and
+          feedback help us shape future designs and keep the harmony in Handmade
+          Harmony.
         </p>
 
         <h4>We're honoured to create something special, just for you.</h4>
       </div>
-
-
-     
 
       <div className="about-features">
         <div className="feature-box">
@@ -133,7 +122,6 @@ const About = () => {
         </div>
       </div>
       <Footer />
-
     </div>
   );
 };

@@ -1,193 +1,184 @@
-.offers{
-
-    width: 100%;
-    height: 600px;
-    display:flex;
-    margin: auto;
-    padding: 20px 0px;
-    margin-bottom: 80px;
-    box-shadow: 0px 0px 40px -22px #bc2e2f;
-    background-image: url("../Assets/making-hearts-with-crochet-for-about-page.png");
-    background-color: rgba(242, 242, 242, 0.1);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: -80px;
+.offers {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  margin: auto;
+  padding: 20px 0px;
+  margin-bottom: 80px;
+  box-shadow: 0px 0px 40px -22px #bc2e2f;
+  background-image: url("../Assets/making-hearts-with-crochet-for-about-page.png");
+  background-color: rgba(242, 242, 242, 0.1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -80px;
 }
 
-
-.offers-left{
-    flex: 1;
-    display: flex;
+.offers-left {
+  flex: 1;
+  display: flex;
 }
 
-.offers-right{
-    text-align: center;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    padding-left: 160px;
-    margin-right: 26px;
+.offers-right {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 160px;
+  margin-right: 26px;
 }
 
-.offers-right h1{
-    color: #bc2e2f;
-    font-size: 56px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.offers-right h1 {
+  color: #bc2e2f;
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.offers-right h2{
-    color: #1c1c1c;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 30px;
+.offers-right h2 {
+  color: #1c1c1c;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
-.offers-right p{
-    color: #1c1c1c;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
+.offers-right p {
+  color: #1c1c1c;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.offers-right span{
-    color: #1c1c1c;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    
+.offers-right span {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
-.offers-right button{
-   width: 240px;
-    height: 60px;
-    outline: none ;
-    border: 1px solid #bc2e2f ;
-    border-radius: 8px;  
-    color: #bc2e2f ;
-    font-size: 24px;
-    font-weight: 600 ;
-    background-color: rgba(242, 242, 242, 0.25);
-    cursor: pointer;
-    transition: 0.3s;
-    margin-bottom: 10px;
+.offers-right button {
+  width: 240px;
+  height: 60px;
+  outline: none;
+  border: 1px solid #bc2e2f;
+  border-radius: 8px;
+  color: #bc2e2f;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: rgba(242, 242, 242, 0.25);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 10px;
 }
 
-.offers-right button a{
-   text-decoration: none;
-    color: inherit;
+.offers-right button a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.offers-right button:hover{
-    background: #bc2e2f;
-    color: #f2f2f2;
+.offers-right button:hover {
+  background: #bc2e2f;
+  color: #f2f2f2;
 }
 
- .offers-right button:active{
-    background: #1c1c1c;
-    color: #f2f2f2;
- }
+.offers-right button:active {
+  background: #1c1c1c;
+  color: #f2f2f2;
+}
 
-
- /* ===========================
+/* ===========================
     TABLETS
    =========================== */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
+  .offers {
+    height: auto;
+    flex-direction: column;
+    background-position: center;
+    padding: 40px 20px;
+  }
 
-    .offers {
-        height: auto;
-        flex-direction: column;
-        background-position: center;
-        padding: 40px 20px;
-    }
+  .offers-right {
+    padding-left: 0;
+    margin-right: 0;
+  }
 
-    .offers-right {
-        padding-left: 0;
-        margin-right: 0;
-    }
+  .offers-right h1 {
+    font-size: 40px;
+  }
 
-    .offers-right h1 {
-        font-size: 40px;
-    }
+  .offers-right h2 {
+    font-size: 30px;
+  }
 
-    .offers-right h2 {
-        font-size: 30px;
-    }
+  .offers-right p {
+    font-size: 20px;
+  }
 
-    .offers-right p {
-        font-size: 20px;
-    }
-
-    .offers-right span {
-        font-size: 18px;
-    }
+  .offers-right span {
+    font-size: 18px;
+  }
 }
-
 
 /* ===========================
     MOBILE
    =========================== */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  .offers {
+    padding: 30px 10px;
+    background-size: cover;
+    background-position: center;
+  }
 
-    .offers {
-        padding: 30px 10px;
-        background-size: cover;
-        background-position: center;
-    }
+  .offers-right h1 {
+    font-size: 30px;
+  }
 
-    .offers-right h1 {
-        font-size: 30px;
-    }
+  .offers-right h2 {
+    font-size: 22px;
+  }
 
-    .offers-right h2 {
-        font-size: 22px;
-    }
+  .offers-right p {
+    font-size: 18px;
+  }
 
-    .offers-right p {
-        font-size: 18px;
-    }
+  .offers-right span {
+    font-size: 16px;
+  }
 
-    .offers-right span {
-        font-size: 16px;
-    }
-
-    .offers-right button {
-        width: 90%;
-        font-size: 18px;
-        height: auto;
-        padding: 10px;
-    }
+  .offers-right button {
+    width: 90%;
+    font-size: 18px;
+    height: auto;
+    padding: 10px;
+  }
 }
-
 
 /* ===========================
     SMALL PHONES
    =========================== */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
+  .offers-right h1 {
+    font-size: 24px;
+  }
 
-    .offers-right h1 {
-        font-size: 24px;
-    }
+  .offers-right h2 {
+    font-size: 18px;
+  }
 
-    .offers-right h2 {
-        font-size: 18px;
-    }
+  .offers-right p {
+    font-size: 16px;
+  }
 
-    .offers-right p {
-        font-size: 16px;
-    }
+  .offers-right span {
+    font-size: 14px;
+  }
 
-    .offers-right span {
-        font-size: 14px;
-    }
-
-    .offers-right button {
-        font-size: 16px;
-    }
+  .offers-right button {
+    font-size: 16px;
+  }
 }

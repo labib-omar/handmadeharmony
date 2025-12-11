@@ -1,6 +1,6 @@
-import React from 'react';
-import './AllProducts.css';
-import Item from '../Items/Item';
+import React from "react";
+import "./AllProducts.css";
+import Item from "../Items/Item";
 
 const AllProducts = () => {
   const [all_product, setAll_product] = React.useState([]);

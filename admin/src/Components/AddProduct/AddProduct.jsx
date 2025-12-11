@@ -48,7 +48,6 @@ const AddProduct = () => {
     formData.append("image3", images.image3);
     formData.append("image4", images.image4);
 
-
     let uploadResponse;
 
     try {

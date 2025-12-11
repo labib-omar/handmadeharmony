@@ -1,40 +1,37 @@
-
-
 .descriptionbox {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(242, 242, 242, 0.5);
-    margin-bottom: 40px;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(242, 242, 242, 0.5);
+  margin-bottom: 40px;
 }
 
 .description-navigator {
-    display: flex;
-    gap: 40px;
-    font-size: 22px;
-    margin: 20px 0px;
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+  margin: 20px 0px;
 }
 
 .description-navigator div {
-    padding-bottom: 3px;
-    transition: 0.3s;
+  padding-bottom: 3px;
+  transition: 0.3s;
 }
 
 .active-tab {
-    font-weight: bold;
-    border-bottom: 3px solid #bc2e2f;
-    border-radius: 6%;
+  font-weight: bold;
+  border-bottom: 3px solid #bc2e2f;
+  border-radius: 6%;
 }
 
 .description-navigator div:hover {
-    color: #bc2e2f;
-    cursor: pointer;
+  color: #bc2e2f;
+  cursor: pointer;
 }
 
-
 .descriptionbox-description {
-    line-height: 1.6;
-    font-size: 18px;
-    color: #2c2c2c;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #2c2c2c;
 }
 
 .description-markdown {
@@ -48,98 +45,97 @@
 
 /* ---------- Tablet (1024px) ---------- */
 @media (max-width: 1024px) {
-    .descriptionbox {
-        width: 90%;
-    }
+  .descriptionbox {
+    width: 90%;
+  }
 
-    .description-navigator {
-        font-size: 20px;
-        gap: 30px;
-    }
+  .description-navigator {
+    font-size: 20px;
+    gap: 30px;
+  }
 
-    .descriptionbox-description {
-        font-size: 17px;
-    }
+  .descriptionbox-description {
+    font-size: 17px;
+  }
 }
 
 /* ---------- Small Tablet (768px) ---------- */
 @media (max-width: 768px) {
-    .descriptionbox {
-        width: 92%;
-    }
+  .descriptionbox {
+    width: 92%;
+  }
 
-    .description-navigator {
-        font-size: 18px;
-        gap: 20px;
-        justify-content: center;
-        flex-wrap: wrap;      /* Prevent overflow */
-        text-align: center;
-    }
+  .description-navigator {
+    font-size: 18px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Prevent overflow */
+    text-align: center;
+  }
 
-    .description-navigator div {
-        padding: 5px 10px;
-    }
+  .description-navigator div {
+    padding: 5px 10px;
+  }
 
-    .descriptionbox-description {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+  .descriptionbox-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 /* ---------- Mobile (600px) ---------- */
 @media (max-width: 600px) {
-    .descriptionbox {
-        width: 95%;
-        padding: 0 10px;
-    }
+  .descriptionbox {
+    width: 95%;
+    padding: 0 10px;
+  }
 
-    .description-navigator {
-        font-size: 16px;
-        gap: 15px;
-    }
+  .description-navigator {
+    font-size: 16px;
+    gap: 15px;
+  }
 
-    .descriptionbox-description {
-        font-size: 15px;
-    }
+  .descriptionbox-description {
+    font-size: 15px;
+  }
 
-    .description-markdown {
-        font-size: 15px;
-    }
+  .description-markdown {
+    font-size: 15px;
+  }
 }
 
 /* ---------- Small Mobile (450px) ---------- */
 @media (max-width: 450px) {
+  .description-navigator {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 
-    .description-navigator {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+  .description-navigator div {
+    font-size: 15px;
+    padding: 4px 0;
+  }
 
-    .description-navigator div {
-        font-size: 15px;
-        padding: 4px 0;
-    }
-
-    .descriptionbox-description {
-        font-size: 14px;
-        line-height: 1.4;
-    }
+  .descriptionbox-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 /* ---------- Very Small Devices (350px) ---------- */
 @media (max-width: 350px) {
-    .descriptionbox {
-        width: 98%;
-        margin: 20px auto;
-    }
+  .descriptionbox {
+    width: 98%;
+    margin: 20px auto;
+  }
 
-    .description-navigator {
-        font-size: 14px;
-    }
+  .description-navigator {
+    font-size: 14px;
+  }
 
-    .descriptionbox-description,
-    .description-markdown {
-        font-size: 13px;
-    }
+  .descriptionbox-description,
+  .description-markdown {
+    font-size: 13px;
+  }
 }
