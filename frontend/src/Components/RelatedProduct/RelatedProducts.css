@@ -42,3 +42,67 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
+
+/* ===========================
+    TABLETS
+   =========================== */
+
+@media screen and (max-width: 1000px){
+
+    .relatedproducts-item {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px 40px;
+        gap: 20px;
+    }
+
+    .relatedproducts h1 {
+        font-size: 28px;
+    }
+
+    .dividing-bar {
+        width: 70%;
+    }
+}
+
+
+/* ===========================
+    MOBILE
+   =========================== */
+
+@media screen and (max-width: 600px){
+
+    .relatedproducts {
+        gap: 15px;
+    }
+
+    .relatedproducts-item {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 20px;
+        gap: 25px;
+    }
+
+    .relatedproducts h1 {
+        font-size: 22px;
+    }
+
+    .hr-Related {
+        width: 55%;
+    }
+}
+
+
+/* ===========================
+    SMALL PHONES
+   =========================== */
+
+@media screen and (max-width: 400px){
+
+    .relatedproducts h1 {
+        font-size: 18px;
+    }
+
+    .relatedproducts-item {
+        gap: 20px;
+    }
+}

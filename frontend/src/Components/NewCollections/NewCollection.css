@@ -39,3 +39,66 @@
     margin-top: 30px;
     gap: 8%;
  }
+ /* ===========================
+    RESPONSIVE TABLETS
+   =========================== */
+
+@media screen and (max-width: 1000px){
+
+    .new-collections {
+        padding: 0px 60px;
+    }
+
+    .new-collections h1 {
+        font-size: 28px;
+    }
+
+    .collections {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+
+/* ===========================
+    RESPONSIVE MOBILE
+   =========================== */
+
+@media screen and (max-width: 600px){
+
+    .new-collections {
+        padding: 0px 20px;
+    }
+
+    .new-collections h1 {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .new-collections hr {
+        width: 55%;
+    }
+
+    .collections {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+
+/* ===========================
+    SMALL PHONES
+   =========================== */
+
+@media screen and (max-width: 400px){
+
+    .new-collections h1 {
+        font-size: 18px;
+    }
+
+    .collections {
+        gap: 20px;
+    }
+}

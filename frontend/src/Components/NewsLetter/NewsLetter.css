@@ -80,3 +80,86 @@
         width: 100%;
     }
 }
+
+
+/* ===========================
+    TABLETS
+   =========================== */
+
+@media screen and (max-width: 900px){
+
+    .newsletter {
+        width: 90%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .newsletter h1 {
+        font-size: 28px;
+    }
+
+    .newsletter p {
+        font-size: 18px;
+    }
+
+    .newsletter div {
+        max-width: 400px;
+    }
+}
+
+
+/* ===========================
+    MOBILES
+   =========================== */
+
+@media screen and (max-width: 600px){
+
+    .newsletter {
+        width: 95%;
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .newsletter h1 {
+        font-size: 22px;
+    }
+
+    .newsletter p {
+        font-size: 16px;
+    }
+
+    .newsletter div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter input {
+        font-size: 16px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+/* ===========================
+    SMALL PHONES
+   =========================== */
+
+@media screen and (max-width: 400px){
+
+    .newsletter h1 {
+        font-size: 18px;
+    }
+
+    .newsletter p {
+        font-size: 14px;
+    }
+
+    .newsletter button {
+        font-size: 14px;
+    }
+}
