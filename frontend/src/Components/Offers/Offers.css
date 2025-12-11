@@ -92,4 +92,102 @@
  }
 
 
- 
+ /* ===========================
+    TABLETS
+   =========================== */
+
+@media screen and (max-width: 1000px){
+
+    .offers {
+        height: auto;
+        flex-direction: column;
+        background-position: center;
+        padding: 40px 20px;
+    }
+
+    .offers-right {
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    .offers-right h1 {
+        font-size: 40px;
+    }
+
+    .offers-right h2 {
+        font-size: 30px;
+    }
+
+    .offers-right p {
+        font-size: 20px;
+    }
+
+    .offers-right span {
+        font-size: 18px;
+    }
+}
+
+
+/* ===========================
+    MOBILE
+   =========================== */
+
+@media screen and (max-width: 600px){
+
+    .offers {
+        padding: 30px 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .offers-right h1 {
+        font-size: 30px;
+    }
+
+    .offers-right h2 {
+        font-size: 22px;
+    }
+
+    .offers-right p {
+        font-size: 18px;
+    }
+
+    .offers-right span {
+        font-size: 16px;
+    }
+
+    .offers-right button {
+        width: 90%;
+        font-size: 18px;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+/* ===========================
+    SMALL PHONES
+   =========================== */
+
+@media screen and (max-width: 400px){
+
+    .offers-right h1 {
+        font-size: 24px;
+    }
+
+    .offers-right h2 {
+        font-size: 18px;
+    }
+
+    .offers-right p {
+        font-size: 16px;
+    }
+
+    .offers-right span {
+        font-size: 14px;
+    }
+
+    .offers-right button {
+        font-size: 16px;
+    }
+}

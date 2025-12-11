@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import  './NewsLetter.css'
 
+
+
+
+
 const NewsLetter = () => {
   
   const [email, setEmail] = useState("");
@@ -13,6 +17,10 @@ const NewsLetter = () => {
       alert("Please enter your email first!");
       return;
     }
+      if (!email.includes("@")) {
+    alert("Please enter a valid email address!");
+    return;
+  }
 
     alert("Subscribed Successfully");
 
