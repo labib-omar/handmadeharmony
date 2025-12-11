@@ -1,103 +1,132 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import "./Navbar.css";
 import logo from '../Assets/Project Pic/Logo/Logo-H-H-handmade-harmony-1.png'
 import cart_icon from '../Assets/cart-icon.png'
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
-              
-
 
 const Navbar = () => {
-     const {getTotalCartItems}=useContext(ShopContext);
-  return (  
-    <div className='header'>
+    const { getTotalCartItems } = useContext(ShopContext);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-      <div className="header-logo-container">
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
-          <div className='free'>
-                {/* free */}
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
+    const NavLinks = () => (
+        <>
+            <li>
+                <NavLink to="/" end onClick={handleLinkClick}>
+                    {({ isActive }) => (
+                        <>
+                            HOME
+                            {isActive && <hr />}
+                        </>
+                    )}
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/shop" onClick={handleLinkClick}>
+                    {({ isActive }) => (
+                        <>
+                            SHOP
+                            {isActive && <hr />}
+                        </>
+                    )}
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/about" onClick={handleLinkClick}>
+                    {({ isActive }) => (
+                        <>
+                            ABOUT
+                            {isActive && <hr />}
+                        </>
+                    )}
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/contacts" onClick={handleLinkClick}>
+                    {({ isActive }) => (
+                        <>
+                            CONTACTS
+                            {isActive && <hr />}
+                        </>
+                    )}
+                </NavLink>
+            </li>
+        </>
+    );
+
+    // Cart Component - Defined once to be used in two different places
+    const CartComponent = ({ className = '' }) => (
+        <div className={`nav-cart ${className}`}>
+            <Link to='/cart'><img src={cart_icon} alt='cart icon' /></Link>
+            <div className="nav-cart-count">{getTotalCartItems()}</div>
+        </div>
+    );
+
+    return (
+        <div className='header'>
+            <div className="header-logo-container">
+                {/* Mobile Menu Button */}
+                <div className='mobile-menu-toggle' onClick={toggleMenu}>
+                    <div className={menuOpen ? "hamburger open" : "hamburger"}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div className='free'>
+                    {/* free */}
+                </div>
+
+                <div className="logo">
+                    <img src={logo} alt="logo" />
+                </div>
+
+                {/* LOGIN/LOGOUT Button and MOBILE Cart */}
+                <div className="header-login">
+                    {localStorage.getItem("auth-token") ?
+                        <button onClick={() => { localStorage.removeItem('auth-token'); window.location.replace("/") }}>Logout</button> :
+                        <NavLink to="/login">
+                            <button>Login</button>
+                        </NavLink>}
+                    
+                    {/* MOBILE CART: Only visible on small screens (controlled by CSS) */}
+                    <CartComponent className="mobile-cart-visible" />
+                </div>
             </div>
 
-        <div className="logo">
-          <img src={logo} alt="logo" />
-          {/* { <p>Handmade Harmony</p> } */}
-        </div>
+            {/* Desktop Navigation (Hidden on Mobile by CSS) */}
+            <div className="navbar">
+                <div className='nav-search'>
+                    {/* search */}
+                </div>
 
-        <div className="header-login">
-          {localStorage.getItem("auth-token")?
-          <button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace("/")}}>Logout</button>:
-          <NavLink to="/login">
-            <button>Login</button>
-          </NavLink>}
-
-        </div>
-      </div>
-
-      <div className="navbar">
-
-        <div className='nav-search'>
-            {/* searh */}
-            
-        </div>
-
-        <ul className="nav-menu">
-          <li>
-            <NavLink to="/" end>
-              {({ isActive }) => (
-                <>
-                  HOME
-                  {isActive && <hr />}
-                </>
-              )}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/shop">
-              {({ isActive }) => (
-                <>
-                  SHOP
-                  {isActive && <hr />}
-                </>
-              )}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/about">
-              {({ isActive }) => (
-                <>
-                  ABOUT
-                  {isActive && <hr />}
-                </>
-              )}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/contacts">
-              {({ isActive }) => (
-                <>
-                  CONTACTS
-                  {isActive && <hr />}
-                </>
-              )}
-            </NavLink>
-          </li>
-        </ul>
-
-      
-
-         <div className="nav-cart">
-                <Link to='/cart'><img src={cart_icon} alt='cart icon' /></Link>
+                <ul className="nav-menu">
+                    <NavLinks />
+                </ul>
                 
-                <div className="nav-cart-count">{getTotalCartItems()}</div>
+                {/* DESKTOP CART: Only visible on large screens (controlled by CSS) */}
+                <CartComponent className="desktop-cart-visible" />
             </div>
+
+            {/* Mobile Collapsible Menu */}
+            {menuOpen && (
+                <div className="mobile-nav-menu-wrapper">
+                    <ul className="mobile-nav-menu">
+                        <NavLinks />
+                    </ul>
+                </div>
+            )}
         </div>
-    </div>
-  );
+    );
 };
 
 export default Navbar;
