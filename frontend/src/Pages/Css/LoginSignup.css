@@ -90,3 +90,96 @@
     color: #1c1c1c;
     text-align: center;
 }
+
+/* ===========================
+    TABLETS
+   =========================== */
+
+@media screen and (max-width: 900px){
+
+    .loginsignup {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .loginsignup-container {
+        width: 360px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 30px;
+    }
+
+    .loginsignup-field input {
+        font-size: 14px;
+    }
+}
+
+
+/* ===========================
+    MOBILE
+   =========================== */
+
+@media screen and (max-width: 600px){
+
+    .loginsignup-page {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .loginsignup {
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .loginsignup-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 24px;
+    }
+
+    .loginsignup-field {
+        gap: 10px;
+    }
+
+    .loginsignup-field input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .loginsignup-container button {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .loginsignup-login {
+        font-size: 13px;
+    }
+}
+
+
+/* ===========================
+    SMALL PHONES
+   =========================== */
+
+@media screen and (max-width: 400px){
+
+    .loginsignup-container h1 {
+        font-size: 20px;
+    }
+
+    .loginsignup-field input {
+        font-size: 13px;
+    }
+
+    .loginsignup-container button {
+        font-size: 13px;
+    }
+
+    .loginsignup-agree p {
+        font-size: 12px;
+    }
+}

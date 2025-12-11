@@ -86,3 +86,151 @@
     background: #1c1c1c;
     color: #f2f2f2;
  }
+/* ======================================= */
+/* 📱 Responsive Hero Section (Added Only) */
+/* ======================================= */
+
+/* ------- Large Tablet (max 1024px) ------- */
+@media (max-width: 1024px) {
+    .hero {
+        padding-left: 40px;
+        height: auto;
+    }
+
+    .hero-intro {
+        font-size: 24px;
+        max-width: 450px;
+    }
+
+    .H-H, .Handmade-Harmony {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 22px;
+        max-width: 430px;
+    }
+
+    .hero-latest-btn a {
+        font-size: 22px;
+    }
+}
+
+/* ------- Tablet (max 768px) ------- */
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 25px;
+    }
+
+    .hero-intro {
+        font-size: 22px;
+        max-width: 400px;
+    }
+
+    .H-H {
+        font-size: 34px;
+        margin-left: 120px;
+    }
+
+    .Handmade-Harmony {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+        max-width: 380px;
+    }
+
+    .hero-latest-btn {
+        margin-left: 10px;
+    }
+
+    .hero-latest-btn a {
+        font-size: 20px;
+        padding: 10px 18px;
+    }
+}
+
+/* ------- Mobile (max 600px) ------- */
+@media (max-width: 600px) {
+    .hero {
+        padding-left: 0px;
+        text-align: center;
+        align-items: center;
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .hero-intro {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .H-H {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    .Handmade-Harmony {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .hero-latest-btn {
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-latest-btn img {
+        margin-right: 10px;
+        width: 22px;
+    }
+
+    .hero-latest-btn a {
+        font-size: 18px;
+        padding: 10px 16px;
+    }
+}
+
+/* ------- Small Mobile (max 420px) ------- */
+@media (max-width: 420px) {
+    .hero-intro {
+        font-size: 18px;
+    }
+
+    .H-H, .Handmade-Harmony {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-latest-btn a {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+}
+
+/* ------- Ultra Small Devices (max 340px) ------- */
+@media (max-width: 340px) {
+    .H-H, .Handmade-Harmony {
+        font-size: 24px;
+    }
+
+    .hero-description, 
+    .hero-intro {
+        font-size: 15px;
+    }
+
+    .hero-latest-btn img {
+        width: 18px;
+    }
+}

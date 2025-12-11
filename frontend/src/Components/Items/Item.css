@@ -56,4 +56,88 @@
     font-weight: 500;
     text-decoration: line-through;
 }
+/* ===========================
+    RESPONSIVE FOR TABLETS
+   =========================== */
 
+@media screen and (max-width: 900px) {
+
+    .item {
+        margin-bottom: 40px;
+    }
+
+    .item img {
+        max-width: 85%;
+    }
+
+    .item p {
+        font-size: 18px bedoel;
+        min-height: 40px;
+        text-align: center;
+    }
+
+    .item-price-new {
+        font-size: 18px;
+    }
+
+    .item-price-old {
+        font-size: 16px;
+    }
+}
+
+
+/* ===========================
+    RESPONSIVE FOR MOBILE
+   =========================== */
+
+@media screen and (max-width: 600px) {
+
+    .item {
+        margin-bottom: 30px;
+    }
+
+    .item img {
+        max-width: 90%;
+    }
+
+    .item p {
+        font-size: 16px;
+        min-height: 35px;
+    }
+
+    .item-prices {
+        gap: 2px;
+    }
+
+    .item-price-new {
+        font-size: 16px;
+    }
+
+    .item-price-old {
+        font-size: 14px;
+    }
+}
+
+
+/* ===========================
+    SMALL PHONES
+   =========================== */
+
+@media screen and (max-width: 400px) {
+
+    .item img {
+        max-width: 100%;
+    }
+
+    .item p {
+        font-size: 14px;
+    }
+
+    .item-price-new {
+        font-size: 14px;
+    }
+
+    .item-price-old {
+        font-size: 12px;
+    }
+}
