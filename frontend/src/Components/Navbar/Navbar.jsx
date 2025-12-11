@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "./Navbar.css";
-import logo from "../Assets/Project Pic/Logo/Logo-H-H-handmade-harmony-1.png";
+import logo from "../Assets/Project Pic/Logo/Logo-H-H-handmade-harmony.png";
 import cart_icon from "../Assets/cart-icon.png";
 import { NavLink, Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
@@ -87,7 +87,11 @@ const Navbar = () => {
         <div className="free">{/* free */}</div>
 
         <div className="logo">
+           <NavLink to="/">
+            <>
           <img src={logo} alt="logo" />
+            </>
+        </NavLink>
         </div>
 
         {/* LOGIN/LOGOUT Button and MOBILE Cart */}
