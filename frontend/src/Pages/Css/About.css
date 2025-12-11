@@ -1,8 +1,8 @@
 .about-page {
   color: #1c1c1c;
   background-image: url("../../Components/Assets/Project Pic/Background/main-background-for-H-H-handmade-harmony-2.png");
-  background-size: cover;
-  background-position: 100px 20px;
+  background-size: contain;
+  background-position: 0px 500px;
 }
 
 .about-header {
