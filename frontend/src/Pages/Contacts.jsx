@@ -64,46 +64,13 @@ const Contacts = () => {
             idea, or kind word, we're always happy to hear from you.
           </p>
         </div>
+       
+        <a  href="mailto:contact@hh-handmadeharmony.com?subject=Customer Inquiry&body=Dear H.H Customer Service,">
+          <button className="contact-btn">
+            SEND MESSAGE
+          </button>
+        </a>
 
-        <form className="contact-form">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            required
-            minLength="3"
-            maxLength="40"
-          />
-
-          <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            required
-            minLength="8"
-            maxLength="40"
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-            maxLength="50"
-          />
-
-          <textarea
-            name="message"
-            placeholder="Message"
-            required
-            minLength="40"
-            maxLength="300"
-          ></textarea>
-
-          <a href="mailto:contact@hh-handmadeharmony.com?subject=Customer Inquiry&body=Dear H.H Customer Service,">
-            <button type="submit">SEND MESSAGE</button>
-          </a>
-        </form>
       </div>
 
       <Footer />
