@@ -107,7 +107,7 @@ const Contacts = () => {
           ></textarea>
 
            <a
-            href="mailto:contact@hh-handmade.com?subject=Customer Inquiry&body=Dear H.H Customer Service,"
+            href="mailto:contact@hh-handmadeharmony.com?subject=Customer Inquiry&body=Dear H.H Customer Service,"
             >
               <button type="submit">
                 SEND MESSAGE
