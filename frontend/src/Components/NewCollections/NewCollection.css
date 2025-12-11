@@ -1,104 +1,87 @@
-
-
-
-.new-collections{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px ;
-    padding: 0px 150px;
+.new-collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0px 150px;
 }
 
-.new-collections h1{
-    color: #1c1c1c;
-    margin-bottom: 8px;
-    letter-spacing: 3px;
-    font-size: 34px;
-    padding: 50px 0px 0px 0px;
+.new-collections h1 {
+  color: #1c1c1c;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  font-size: 34px;
+  padding: 50px 0px 0px 0px;
 }
 
-.new-collections hr{
-    width: 30%;
-    border: none;
-    height: 0.9px;
-    border-radius: 50%;
-    background: #bc2e2f;
+.new-collections hr {
+  width: 30%;
+  border: none;
+  height: 0.9px;
+  border-radius: 50%;
+  background: #bc2e2f;
 }
 
-
-/* .collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
-    gap: 10px;
-    padding-left: 25px;
-} */
-
-.collections{
-    display: flex;
-    margin-top: 30px;
-    gap: 8%;
- }
- /* ===========================
+.collections {
+  display: flex;
+  margin-top: 30px;
+  gap: 8%;
+}
+/* ===========================
     RESPONSIVE TABLETS
    =========================== */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
+  .new-collections {
+    padding: 0px 60px;
+  }
 
-    .new-collections {
-        padding: 0px 60px;
-    }
+  .new-collections h1 {
+    font-size: 28px;
+  }
 
-    .new-collections h1 {
-        font-size: 28px;
-    }
-
-    .collections {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
+  .collections {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
 }
-
 
 /* ===========================
     RESPONSIVE MOBILE
    =========================== */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  .new-collections {
+    padding: 0px 20px;
+  }
 
-    .new-collections {
-        padding: 0px 20px;
-    }
+  .new-collections h1 {
+    font-size: 22px;
+    padding-top: 20px;
+  }
 
-    .new-collections h1 {
-        font-size: 22px;
-        padding-top: 20px;
-    }
+  .new-collections hr {
+    width: 55%;
+  }
 
-    .new-collections hr {
-        width: 55%;
-    }
-
-    .collections {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
+  .collections {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }
-
 
 /* ===========================
     SMALL PHONES
    =========================== */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
+  .new-collections h1 {
+    font-size: 18px;
+  }
 
-    .new-collections h1 {
-        font-size: 18px;
-    }
-
-    .collections {
-        gap: 20px;
-    }
+  .collections {
+    gap: 20px;
+  }
 }

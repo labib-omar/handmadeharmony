@@ -1,30 +1,29 @@
-.item{
-    display: flex;;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    }
-
-.item a{
-    width: 100%;
-    text-decoration: none; 
-    display: flex;
-    justify-content: center;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.item img{
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 40px -22px #bc2e2f;
-    border-radius: 12px;
-    cursor: pointer;
-    margin-bottom: 18px;
-
+.item a {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-.item img:hover{
-    transform: scale(1.05);
-    transition: 0.6s ease;
+.item img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 40px -22px #bc2e2f;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease;
 }
 
 .item p {
@@ -32,112 +31,106 @@
   color: #bc2e2f;
   font-size: 20px;
   font-weight: 600;
-  min-height: 50px;   
+  min-height: 50px;
   display: flex;
   align-items: flex-center;
 }
 
-
-.item-prices{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+.item-prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
-.item-price-new{
-   color: #1c1c1c;
-   font-size: 20px;
-   font-weight: 600;
+.item-price-new {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-weight: 600;
 }
-.item-price-old{
-    color: #8c8c8c;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: line-through;
+.item-price-old {
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: line-through;
 }
 /* ===========================
     RESPONSIVE FOR TABLETS
    =========================== */
 
 @media screen and (max-width: 900px) {
+  .item {
+    margin-bottom: 40px;
+  }
 
-    .item {
-        margin-bottom: 40px;
-    }
+  .item img {
+    max-width: 85%;
+  }
 
-    .item img {
-        max-width: 85%;
-    }
+  .item p {
+    font-size: 18px bedoel;
+    min-height: 40px;
+    text-align: center;
+  }
 
-    .item p {
-        font-size: 18px bedoel;
-        min-height: 40px;
-        text-align: center;
-    }
+  .item-price-new {
+    font-size: 18px;
+  }
 
-    .item-price-new {
-        font-size: 18px;
-    }
-
-    .item-price-old {
-        font-size: 16px;
-    }
+  .item-price-old {
+    font-size: 16px;
+  }
 }
-
 
 /* ===========================
     RESPONSIVE FOR MOBILE
    =========================== */
 
 @media screen and (max-width: 600px) {
+  .item {
+    margin-bottom: 30px;
+  }
 
-    .item {
-        margin-bottom: 30px;
-    }
+  .item img {
+    max-width: 90%;
+  }
 
-    .item img {
-        max-width: 90%;
-    }
+  .item p {
+    font-size: 16px;
+    min-height: 35px;
+  }
 
-    .item p {
-        font-size: 16px;
-        min-height: 35px;
-    }
+  .item-prices {
+    gap: 2px;
+  }
 
-    .item-prices {
-        gap: 2px;
-    }
+  .item-price-new {
+    font-size: 16px;
+  }
 
-    .item-price-new {
-        font-size: 16px;
-    }
-
-    .item-price-old {
-        font-size: 14px;
-    }
+  .item-price-old {
+    font-size: 14px;
+  }
 }
-
 
 /* ===========================
     SMALL PHONES
    =========================== */
 
 @media screen and (max-width: 400px) {
+  .item img {
+    max-width: 100%;
+  }
 
-    .item img {
-        max-width: 100%;
-    }
+  .item p {
+    font-size: 14px;
+  }
 
-    .item p {
-        font-size: 14px;
-    }
+  .item-price-new {
+    font-size: 14px;
+  }
 
-    .item-price-new {
-        font-size: 14px;
-    }
-
-    .item-price-old {
-        font-size: 12px;
-    }
+  .item-price-old {
+    font-size: 12px;
+  }
 }

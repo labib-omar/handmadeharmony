@@ -1,6 +1,3 @@
-
-
-
 .Legal-container {
   padding: 50px 25px 25px 25px;
   font-family: "Inter", Arial, sans-serif;
@@ -20,16 +17,16 @@
 }
 
 .Legal-hr {
-    width: 26%;
-    margin: 0 auto;
-    border: none;
-    height: 0.9px;
-    border-radius: 50%;
-    background: #bc2e2f;
-    margin-bottom: 50px;
+  width: 26%;
+  margin: 0 auto;
+  border: none;
+  height: 0.9px;
+  border-radius: 50%;
+  background: #bc2e2f;
+  margin-bottom: 50px;
 }
 
-.Legal-container hr{
+.Legal-container hr {
   width: 80px;
   border: none;
   height: 2px;
@@ -47,13 +44,10 @@
   color: #1c1c1c;
 }
 
-
-
 .Legal-container p {
-   margin-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
 }
-
 
 .Legal-container h1,
 .Legal-container h2,
@@ -65,94 +59,86 @@
   line-height: 1.8;
 }
 
-
 .Legal-copyright {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 .Legal-copyright hr {
-    width: 70%;
-    border: none;
-    height: 0.5px;
-    background: #bc2e2f;
-    margin: 0;
-    padding: 0;
-
+  width: 70%;
+  border: none;
+  height: 0.5px;
+  background: #bc2e2f;
+  margin: 0;
+  padding: 0;
 }
 
 .Legal-copyright p {
-    font-size: 14px;
-    color: #1c1c1c;
-    padding: 0;
-    margin: 0;
+  font-size: 14px;
+  color: #1c1c1c;
+  padding: 0;
+  margin: 0;
 }
-
 
 /* ===========================
    ✅ TABLET RESPONSIVE
 =========================== */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
+  .Legal-container {
+    padding: 40px 20px;
 
-    .Legal-container {
-        padding: 40px 20px;
-       
-      
-        height:94vh;
-    }
+    height: 94vh;
+  }
 
-    .Legal-container h1 {
-        font-size: 34px;
-    }
+  .Legal-container h1 {
+    font-size: 34px;
+  }
 
-    .Legal-container h2 {
-        font-size: 22px;
-    }
+  .Legal-container h2 {
+    font-size: 22px;
+  }
 
-    .Legal-container p {
-        font-size: 17px;
-    }
-
+  .Legal-container p {
+    font-size: 17px;
+  }
 }
 
 /* ===========================
    ✅ MOBILE RESPONSIVE
 =========================== */
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
+  .Legal-container {
+    padding: 30px 10px;
+    background-size: cover;
+  }
 
-    .Legal-container {
-        padding: 30px 10px;
-        background-size: cover;
-    }
+  .Legal-container h1 {
+    font-size: 26px;
+  }
 
-    .Legal-container h1 {
-        font-size: 26px;
-    }
+  .Legal-hr {
+    width: 40%;
+  }
 
-    .Legal-hr {
-        width:40%;
-    }
+  .Legal-container h2 {
+    font-size: 20px;
+  }
 
-    .Legal-container h2 {
-        font-size: 20px;
-    }
+  .Legal-container p {
+    font-size: 15px;
+  }
 
-    .Legal-container p {
-        font-size: 15px;
-    }
+  .Legal-container hr {
+    width: 60px;
+    margin: 25px auto;
+  }
 
-    .Legal-container hr {
-        width: 60px;
-        margin: 25px auto;
-    }
-
-    .Legal-copyright hr {
-        width: 55%;
-    }
-
+  .Legal-copyright hr {
+    width: 55%;
+  }
 }

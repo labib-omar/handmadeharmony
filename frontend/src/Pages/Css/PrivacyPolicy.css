@@ -1,6 +1,3 @@
-
-
-
 .policy-container {
   padding: 50px 25px 25px 25px;
   text-align: center;
@@ -12,16 +9,16 @@
 }
 
 .policy-hr {
-    width: 28%;
-    margin: 0 auto;
-    border: none;
-    height: 0.9px;
-    border-radius: 50%;
-    background: #bc2e2f;
-    margin-bottom: 50px;
+  width: 28%;
+  margin: 0 auto;
+  border: none;
+  height: 0.9px;
+  border-radius: 50%;
+  background: #bc2e2f;
+  margin-bottom: 50px;
 }
 
-.policy-container hr{
+.policy-container hr {
   width: 80px;
   border: none;
   height: 2px;
@@ -62,14 +59,11 @@
   margin-bottom: 30px;
   list-style-position: inside;
   line-height: 1.2;
-   
 }
 
 .policy-container ul li {
   margin-bottom: 8px;
- 
 }
-
 
 .policy-container h1,
 .policy-container h2,
@@ -82,104 +76,97 @@
   line-height: 1.8;
 }
 
-
 .policy-copyright {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 .policy-copyright hr {
-    width: 70%;
-    border: none;
-    height: 0.5px;
-    background: #bc2e2f;
-    margin: 0;
-    padding: 0;
-
+  width: 70%;
+  border: none;
+  height: 0.5px;
+  background: #bc2e2f;
+  margin: 0;
+  padding: 0;
 }
 
 .policy-copyright p {
-    font-size: 14px;
-    color: #1c1c1c;
-    padding: 0;
-    margin: 0;
+  font-size: 14px;
+  color: #1c1c1c;
+  padding: 0;
+  margin: 0;
 }
 /* ===========================
    ✅ TABLET RESPONSIVE
 =========================== */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
+  .policy-container {
+    padding: 40px 20px;
+    background-size: cover;
+  }
 
-    .policy-container {
-        padding: 40px 20px;
-        background-size: cover;
-    }
+  .policy-container h1 {
+    font-size: 34px;
+  }
 
-    .policy-container h1 {
-        font-size: 34px;
-    }
+  .policy-container h2 {
+    font-size: 22px;
+  }
 
-    .policy-container h2 {
-        font-size: 22px;
-    }
+  .policy-container h3 {
+    font-size: 20px;
+  }
 
-    .policy-container h3 {
-        font-size: 20px;
-    }
-
-    .policy-container p {
-        font-size: 17px;
-    }
-
+  .policy-container p {
+    font-size: 17px;
+  }
 }
-
 
 /* ===========================
    ✅ MOBILE RESPONSIVE
 =========================== */
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
+  .policy-container {
+    padding: 30px 10px;
+    background-size: cover;
+  }
 
-    .policy-container {
-        padding: 30px 10px;
-        background-size: cover;
-    }
+  .policy-container h1 {
+    font-size: 26px;
+  }
 
-    .policy-container h1 {
-        font-size: 26px;
-    }
+  .policy-hr {
+    width: 40%;
+  }
 
-    .policy-hr {
-        width:40%;
-    }
+  .policy-container h2 {
+    font-size: 20px;
+  }
 
-    .policy-container h2 {
-        font-size: 20px;
-    }
+  .policy-container h3 {
+    font-size: 18px;
+  }
 
-    .policy-container h3 {
-        font-size: 18px;
-    }
+  .policy-container p {
+    font-size: 15px;
+  }
 
-    .policy-container p {
-        font-size: 15px;
-    }
+  .policy-container ul {
+    padding-left: 10px;
+    font-size: 15px;
+  }
 
-    .policy-container ul {
-        padding-left: 10px;
-        font-size: 15px;
-    }
+  .policy-container hr {
+    width: 60px;
+    margin: 20px auto;
+  }
 
-    .policy-container hr {
-        width:60px;
-        margin:20px auto;
-    }
-
-    .policy-copyright hr {
-        width:55%;
-    }
-
+  .policy-copyright hr {
+    width: 55%;
+  }
 }

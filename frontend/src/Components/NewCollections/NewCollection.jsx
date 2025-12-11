@@ -1,6 +1,6 @@
-import React from 'react';
-import './NewCollection.css';
-import Item from '../Items/Item';
+import React from "react";
+import "./NewCollection.css";
+import Item from "../Items/Item";
 
 const NewCollection = () => {
   const [new_collections, setNew_Collection] = React.useState([]);
@@ -13,9 +13,8 @@ const NewCollection = () => {
 
   return (
     <div className="new-collections">
-      
       <h1>NEW DESIGNS</h1>
-      
+
       <hr />
 
       <div className="collections">
