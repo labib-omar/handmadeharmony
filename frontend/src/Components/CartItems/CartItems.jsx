@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png";
@@ -53,11 +54,22 @@ const CartItems = () => {
           return (
             <div key={e.id}>
               <div className="cartitems-format">
-                <img src={e.image} alt="" className="carticon-product-icon" />
+                <Link
+                  to={`/product/${e.id}`}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  <img
+                    src={e.image}
+                    alt={e.name}
+                    className="carticon-product-icon"
+                  />
+                </Link>
                 <p>{e.name}</p>
                 <p>${e.new_price}</p>
                 <p className="cartitems-quantity">{cartItems[e.id]}</p>
-                <p>${e.new_price * cartItems[e.id]}</p>
+                <p>${(e.new_price * cartItems[e.id]).toFixed(2)}</p>
                 <img
                   className="cartitems-remove-icon"
                   src={remove_icon}
